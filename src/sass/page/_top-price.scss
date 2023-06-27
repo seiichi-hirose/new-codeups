@@ -1,35 +1,45 @@
 @use "global" as *;
 
 .top-price {
-
+background-color: $lightblue;
 }
 
 .top-price__inner {
-
+    padding-top: rem(80);
+    padding-bottom: rem(80);
 }
 
 .top-price__section-title {
-
+    text-align: center;
 }
 
 .top-price__figure {
-
+    margin-top: rem(24);
+    width: 100%;
+    aspect-ratio: 345 / 227;
 }
 
 .top-price__image {
-
+    width: 100%;
+    object-fit: cover;
 }
 
 .top-price__wrapper {
-
+    margin-top: rem(40);
 }
 
 .top-price__table {
 
 }
+.top-price__table:not(:first-child) {
+    margin-top: rem(40);
+}
 
 .top-price__title {
-
+    font-weight: $bold;
+    font-size: rem(16);
+    padding-bottom: rem(4);
+    border-bottom: rem(1) solid $skyblue;
 }
 
 .top-pirce__body {
@@ -37,7 +47,11 @@
 }
 
 .top-price__line {
-
+    margin-top: rem(8);
+    display: flex;
+    justify-content: space-between;
+    font-weight: $normal;
+    font-size: rem(14);
 }
 
 .top-price__course {
@@ -49,7 +63,9 @@
 }
 
 .top-price__link-button {
-
+    margin-top: rem(40);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

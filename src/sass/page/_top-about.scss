@@ -5,35 +5,62 @@
 }
 
 .top-about__inner {
-
+    margin-top: rem(80);
 }
 
 .top-about__section-title {
-
+    text-align: center;
 }
 
 .top-about__figure {
-
+    margin-top: rem(24);
+    width: 100%;
+    aspect-ratio: 345 / 212;
+    position: relative;
 }
 
-.top-about__image {
+.top-about__image2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: rem(128);
+    object-fit: cover;
+    margin-left: auto;
+    z-index: 19;
+}
+.top-about__image1 {
+    position: absolute;
+    right: 0;
+    top: rem(26);
+    width: rem(280);
+    object-fit: cover;
+    margin-left: auto;
 
 }
 
 .top-about__body {
-
+    margin-top: rem(40);
 }
 
 .top-about__title {
-
+    font-family: $second-font-family, sans-serif;
+    color: $skyblue;
+    font-weight: $normal;
+    font-size: rem(40);
+    line-height: 1;
 }
 
 .top-about__copy {
-
+    margin-top: rem(16);
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.5;
 }
 
 .top-about__link-button {
-
+    margin-top: rem(40);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

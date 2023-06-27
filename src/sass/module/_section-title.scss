@@ -4,15 +4,27 @@
 
 }
 
-.section-title--wide {
-
+.section-title__main {
+    font-family: $second-font-family, sans-serif;
+    font-weight: $normal;
+    font-size: rem(32);
+}
+.section-title__main--wide {
+    width: 100%;
+    font-size: rem(80);
+    margin-left: rem(-10);
 }
 
-.section-title__main {
-
+.section-title__main::first-letter {
+    color: $skyblue;
 }
 
 .section-title__sub {
-
+    font-weight: $normal;
+    font-size: rem(12);
+    color: $skyblue;
+}
+.section-title__sub--narrow {
+    margin-top: rem(-20);
 }
 

@@ -21,7 +21,7 @@
   <!-- css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@300;400&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -30,12 +30,14 @@
 <body>
 
   <header class="header">
-    <div class="header__wrapper">
-      <h1 class="header__logo"><a href="" class="header__image"><img src="./assets/images/common/CodeUps_w-sp.png" alt="CodeUpsロゴ"></a></h1>
-      <div class="hamburger js-hamburger u-mobile">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="header__inner inner">
+      <div class="header__wrapper">
+        <h1 class="header__logo"><a href="" class="header__image"><img src="./assets/images/common/CodeUps_w-sp.png" alt="CodeUpsロゴ"></a></h1>
+        <div class="hamburger js-hamburger u-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </header>
@@ -68,7 +70,7 @@
               </div>
             </div>
           </a>
-          <a class="top-campaign__card campaign-card">
+          <!-- <a class="top-campaign__card campaign-card">
             <div class="campaign-card__figure"><img src="./assets/images/common/top_campaign_02-sp.jpg" alt="キャンペーンイメージ２" class="campaign-card__image"></div>
             <div class="campaign-card__body">
               <div class="campaign-card__category">体験ダイビング</div>
@@ -103,7 +105,7 @@
                 <p class="campaign-card__new-price">¥16,000</p>
               </div>
             </div>
-          </a>
+          </a> -->
           <a href="" class="top-campaign__link-button link-button"><span class="link-button__body">View more</span><span class="link-button__arrow"></span></a>
         </div>
       </div>
@@ -115,14 +117,17 @@
           <h2 class="section-title__main">About us</h2>
           <p class="section-title__sub">私たちについて</p>
         </div>
-        <div class="top-about__figure"><img src="./assets/images/common/top_about_01-sp.jpg" alt="アバウトイメージ" class="top-about__image"></div>
+        <div class="top-about__figure">
+          <img src="./assets/images/common/top_about_02-sp.jpg" alt="アバウトイメージ２" class="top-about__image2">
+          <img src="./assets/images/common/top_about_01-sp.jpg" alt="アバウトイメージ１" class="top-about__image1">
+        </div>
+        <div class="top-about__body">
+          <h3 class="top-about__title">Dive into<br>the Ocean</h3>
+          <p class="top-about__copy">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+        </div>
+        <a href="" class="top-about__link-button link-button"><span class="link-button__body">View more</span><span class="link-button__arrow"></span></a>
       </div>
-      <div class="top-about__body">
-        <h3 class="top-about__title">Dive into<br>the Ocean</h3>
-        <p class="top-about__copy">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-      </div>
-      <a href="" class="top-about__link-button link-button"><span class="link-button__body">View more</span><span class="link-button__arrow"></span></a>
     </section>
 
     <section class="top-information">
@@ -278,9 +283,9 @@
           <p class="contact__text">定休日:毎週火曜日</p>
         </div>
         <div class="contact__map"></div>
-        <div class="contact__section-title section-title section-title--wide">
-          <h2 class="section-title__main">Price</h2>
-          <p class="section-title__sub">料金一覧</p>
+        <div class="contact__section-title section-title">
+          <h2 class="section-title__main  section-title__main--wide">Contact</h2>
+          <p class="section-title__sub section-title__sub--narrow">お問合せ</p>
         </div>
         <p class="contact__copy">ご予約・お問い合わせはコチラ</p>
         <a href="" class="contact__link-button link-button"><span class="link-button__body">View more</span><span class="link-button__arrow"></span></a>
@@ -290,49 +295,51 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__top">
-      <a href="" class="footer__logo"><img src="./assets/images/common/CodeUps_w-sp.png" alt="CodeUpsロゴ" class="footer__image"></a>
-      <div class="footer__sns">
-        <a href="" class="footer__sns-image"><img src="./assets/images/common/FacebookLogo-sp.png" alt="フェイスブック" class="footer__facebook"></a>
-        <a href="" class="footer__sns-image"><img src="./assets/images/common/Insta-sp.png" alt="インスタグラム" class="footer__instagram"></a>
+    <div class="footer__inner inner">
+      <div class="footer__top">
+        <a href="" class="footer__logo"><img src="./assets/images/common/CodeUps_w-sp.png" alt="CodeUpsロゴ" class="footer__image"></a>
+        <div class="footer__sns">
+          <a href="" class="footer__sns-image"><img src="./assets/images/common/FacebookLogo-sp.png" alt="フェイスブック" class="footer__facebook"></a>
+          <a href="" class="footer__sns-image"><img src="./assets/images/common/Insta-sp.png" alt="インスタグラム" class="footer__instagram"></a>
+        </div>
       </div>
+      <div class="footer__body">
+        <nav class="footer__nav">
+          <ul class="footer__nav-left">
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">キャンペーン</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">ライセンス取得</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">貸切体験ダイビング</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">ナイトダイビング</a></li>
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">私たちについて</a></li>
+          </ul>
+          <ul class="footer__nav-right">
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">ダイビング情報</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">ライセンス講習</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">体験ダイビング</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">ファンダイビング</a></li>
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">ブログ</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <ul class="footer__nav-left">
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">お客様の声</a></li>
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">料金一覧</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">ライセンス講習</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">体験ダイビング</a></li>
+            <li class="footer__nav-unit"><a href="" class="footer__nav-link">ファンダイビング</a></li>
+          </ul>
+          <ul class="footer__nav-right">
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">よくある質問</a></li>
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">プライバシー<br>ポリシー</a></li>
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">利用規約</a></li>
+            <li class="footer__nav-unit footer__nav-unit--bold"><a href="" class="footer__nav-link">おい問わ合せ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <small class="footer__copy">Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
     </div>
-    <div class="footer__body">
-      <nav class="footer__nav">
-        <ul class="footer__nav-left">
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">キャンペーン</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">ライセンス取得</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">貸切体験ダイビング</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">ナイトダイビング</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">私たちについて</a></li>
-        </ul>
-        <ul class="footer__nav-right">
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">ダイビング情報</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">ライセンス講習</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">体験ダイビング</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">ファンダイビング</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">ブログ</a></li>
-        </ul>
-      </nav>
-      <nav class="footer__nav">
-        <ul class="footer__nav-left">
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">お客様の声</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">料金一覧</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">ライセンス講習</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">体験ダイビング</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">ファンダイビング</a></li>
-        </ul>
-        <ul class="footer__nav-right">
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">よくある質問</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">プライバシー<br>ポリシー</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">利用規約</a></li>
-          <li class="footer__nav-unit"><a href="" class="footer__nav-link">おい問わ合せ</a></li>
-        </ul>
-      </nav>
-    </div>
-    <small class="footer__copy">Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
   </footer>
-  
+
 </body>
 
 </html>

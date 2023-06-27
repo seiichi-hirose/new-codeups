@@ -1,27 +1,29 @@
 @use "global" as *;
 
 .top-campaign {
-
+    width: 100%;
 }
 
 .top-campaign__inner {
-
+    margin-top: rem(40);
 }
 
 .top-campaign__section-title {
-
+    text-align: center;
 }
 
 .top-campaign__cards {
-
+    margin-top: rem(24);
 }
 
 .top-campaign__card {
-
+    max-width: rem(280);
 }
 
 .top-campaign__link-button {
-
+    margin-top: rem(40);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

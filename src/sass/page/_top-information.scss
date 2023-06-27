@@ -1,39 +1,49 @@
 @use "global" as *;
 
 .top-information {
-
+    background-color: $lightblue;
 }
 
 .top-information__inner {
-
+    margin-top: rem(80);
+    padding-bottom: rem(80);
 }
 
 .top-information__section-title {
-
+    padding-top: rem(80);
+    text-align: center;
 }
 
 .top-information__figure {
-
+    margin-top: rem(24);
 }
 
 .top-information__image {
-
+    object-fit: cover;
 }
 
 .top-information_body {
-
+    margin-top: rem(24);
 }
 
 .top-information__title {
-
+    font-weight: $bold;
+    font-size: rem(20);
+    padding-bottom: rem(4);
+    border-bottom: rem(1) solid $skyblue;
 }
 
 .top-information__copy {
-
+    margin-top: rem(8);
+    font-size: rem(16);
+    font-weight: $normal;
+    line-height: 1.5;
 }
 
 .top-information__link-button {
-
+    margin-top: rem(40);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

@@ -5,23 +5,29 @@
 }
 
 .top-voice__inner {
-
+    margin-top: rem(80);
+    padding-bottom: rem(80);
 }
 
 .top-voice__section-title {
-
+    text-align: center;
 }
 
 .top-voice__cards {
-
+    margin-top: rem(40);
 }
 
 .top-voice__card {
 
 }
+.top-voice__card:not(:first-child) {
+    margin-top: rem(40);
+}
 
 .top-voice__link-button {
-
+    margin-top: rem(40);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

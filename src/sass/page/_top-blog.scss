@@ -5,23 +5,25 @@
 }
 
 .top-blog__inner {
-
+    margin-top: rem(80);
 }
 
 .top-blog__section-title {
-
+    text-align: center;
 }
 
 .top-blog__cards {
-
+    margin-top: rem(24);
 }
 
-.top-blog__card {
-
+.top-blog__card:not(:first-child) {
+    margin-top: rem(40);
 }
 
 .top-blog__link-button {
-
+    margin-top: rem(40);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

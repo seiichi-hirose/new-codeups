@@ -1,43 +1,79 @@
 @use "global" as *;
 
 .contact {
-
+    text-align: center;
+    position: relative;
+}
+.contact::after {
+    position: absolute;
+    content: '';
+    background-image: url(../../assets/images/common/top_contact_01-sp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    width: rem(109);
+    height: rem(50);
+    top: rem(-28);
+    right: rem(15);
+    z-index: 40;
 }
 
 .contact__inner {
-
+    margin-top: rem(80);
+    padding-bottom: rem(100);
+    padding-left: rem(40);
+    padding-right: rem(40);
 }
 
 .contact__logo {
-
+    width: 100%;
+    max-width: rem(174);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: rem(6);
 }
 
 .contact__image {
-
+    width: 100%;
 }
 
 .contact__address {
-
+    width: 100%;
+    padding-top: rem(16);
+    border-top: rem(1) solid $skyblue;
 }
 
 .contact__text {
-
+    font-weight: $normal;
+    font-size: rem(16);
+}
+.contact__text:not(:first-child) {
+    margin-top: rem(4);
 }
 
 .contact__map {
-
+    display: block;
+    margin-top: rem(16);
+    width: 100%;
+    min-height: rem(160);
+    background-color: $gray;
 }
 
 .contact__section-title {
-
+    margin-top: rem(40);
 }
 
 .contact__copy {
-
+    font-size: rem(14);
+    font-weight: $normal;
+    color: $skyblue;
+    margin-top: rem(8);
 }
 
 .contact__link-button {
-
+    margin-top: rem(40);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 

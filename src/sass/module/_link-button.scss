@@ -1,13 +1,41 @@
 @use "global" as *;
 
 .link-button {
-
+    display: block;
+    width: rem(202);
+    height: rem(54);
+    background-color: $skyblue;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(8);
+    position: relative;
+}
+.link-button::after {
+    position: absolute;
+    content: '';
+    top: rem(4);
+    left: rem(4);
+    width: rem(202);
+    height: rem(54);
+    display: inline-block;
+    border: rem(1) solid $skyblue;
 }
 
 .link-button__body {
-
+    display: inline-block;
+    color: $normal;
+    font-size: rem(14);
+    font-family: $second-font-family;
 }
 
 .link-button__arrow {
-
+    display: inline-block;
+    width: rem(40);
+    height: rem(8);
+    border-bottom: 1px solid $white;
+    border-right: 1px solid $white;
+    transform: skew(45deg);
+    margin-bottom: rem(8);
 }

@@ -1,2 +1,31 @@
 @use "global" as *;
 
+.header {
+    width: 100%;
+    height: rem(80);
+    background-color: rgb(13,41,54,0.68);
+    position: fixed;
+    z-index: 9000;
+    top: 0;
+    left: 0;
+}
+
+.header__inner {
+height: inherit;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+
+.header__logo {
+    width: rem(102);
+}
+
+.header__image {
+}
+
