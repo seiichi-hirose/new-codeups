@@ -23,6 +23,7 @@
 }
 .to-top:hover {
     background-color: $skyblue;
+    border: rem(1) solid $white;
 }
 .to-top.is-show {
 	opacity: 1;
