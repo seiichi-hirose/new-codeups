@@ -1,0 +1,51 @@
+@use "global" as *;
+
+
+.to-top {
+    display: block;
+    cursor: pointer;
+    width: rem(48);
+    height: rem(48);
+    border-radius: 50%;
+    border: rem(1) solid $skyblue;
+    text-align: center;
+    position: fixed;
+    bottom: rem(40);
+    right: rem(20);
+    z-index: 9900;
+    transition: all .3s;
+    background-color: $white;
+    opacity: 0;
+    @include mq("md") {
+        width: rem(80);
+        height: rem(80);
+    }
+}
+.to-top:hover {
+    background-color: $skyblue;
+}
+.to-top.is-show {
+	opacity: 1;
+}
+
+
+.to-top::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 25%;
+    display: inline-block;
+    width: rem(28);
+    height: rem(6);
+    border-left: rem(1) solid $skyblue;
+    border-top: rem(1) solid $skyblue;
+    transform: rotate(90deg) skew(45deg);
+    transition: all .3s;
+    @include mq("md") {
+        width: rem(40);
+    }
+}
+.to-top:hover::after {
+    border-left: rem(1) solid $white;
+    border-top: rem(1) solid $white;
+}
