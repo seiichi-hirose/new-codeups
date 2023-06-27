@@ -1,29 +1,90 @@
 @use "global" as *;
 
 .top-blog {
-
+    @include mq("md") {
+        position: relative;
+    }
+}
+.top-blog::before {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/common/top_blog_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+        width: 100%;
+        height: rem(500);
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+.top-blog::after {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/common/top_illustration_02.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+        width: rem(437);
+        height: rem(201);
+        top: rem(24);
+        left: rem(100);
+        z-index: -1;
+    }
 }
 
 .top-blog__inner {
-    margin-top: rem(80);
+    padding-top: rem(80);
+    @include mq("md") {
+        padding-top: rem(100);
+    }
 }
 
 .top-blog__section-title {
     text-align: center;
 }
+.top-blog__sub-title,
+.top-blog__main-title::first-letter,
+.top-blog__main-title {
+    @include mq("md") {
+        color: $white;
+    }
+}
 
 .top-blog__cards {
     margin-top: rem(24);
+    @include mq("md") {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(40);
+        margin-top: rem(80);
+    }
+}
+
+.top-blog__card {
+    width: 100%;
+    @include mq("md") {
+        max-width: rem(333);
+    }
 }
 
 .top-blog__card:not(:first-child) {
     margin-top: rem(40);
+    @include mq("md") {
+        margin-top: 0;
+    }
 }
 
 .top-blog__link-button {
     margin-top: rem(40);
     margin-left: auto;
     margin-right: auto;
+    @include mq("md") {
+        margin-top: rem(80);
+    }
 }
 
 

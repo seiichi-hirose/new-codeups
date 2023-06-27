@@ -1,0 +1,32 @@
+@use "global" as *;
+
+
+.header-nav {
+    color: $white;
+    height: inherit;
+}
+
+.header-nav__menu {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.header-nav__item {
+    text-align: center;
+    margin-left: rem(40);
+}
+
+.header-nav__link {
+    display: block;
+    font-family: $second-font-family, sans-serif;
+    font-weight: $normal;
+    font-size: rem(18);
+}
+
+.header-nav__link-ja {
+    display: block;
+    font-weight: $normal;
+    font-size: rem(10);
+}
+

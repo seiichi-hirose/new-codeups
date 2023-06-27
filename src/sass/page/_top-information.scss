@@ -7,15 +7,34 @@
 .top-information__inner {
     margin-top: rem(80);
     padding-bottom: rem(80);
+    @include mq("md") {
+        margin-top: rem(140);
+        padding-bottom: rem(100);
+    }
 }
 
 .top-information__section-title {
     padding-top: rem(80);
     text-align: center;
+    @include mq("md") {
+        padding-top: rem(100);
+    }
 }
-
-.top-information__figure {
+.top-information__wrapper {
     margin-top: rem(24);
+    @include mq("md") {
+        margin-top: rem(40);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(48);
+    }
+}
+.top-information__figure {
+    width: 100%;
+    @include mq("md") {
+        max-width: rem(540);
+    }
 }
 
 .top-information__image {
@@ -24,6 +43,9 @@
 
 .top-information_body {
     margin-top: rem(24);
+    @include mq("md") {
+        margin-top: 0;
+    }
 }
 
 .top-information__title {
@@ -31,6 +53,10 @@
     font-size: rem(20);
     padding-bottom: rem(4);
     border-bottom: rem(1) solid $skyblue;
+    @include mq("md") {
+        font-size: rem(24);
+        padding-bottom: rem(8);
+    }
 }
 
 .top-information__copy {

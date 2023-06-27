@@ -10,6 +10,9 @@
 .campaign-card__figure {
     width: 100%;
     aspect-ratio: 280 / 188;
+    @include mq("md") {
+        aspect-ratio: 333 / 223;
+    }
 }
 
 .campaign-card__image {
@@ -20,6 +23,10 @@
 .campaign-card__body {
     padding: rem(16);
     padding-bottom: rem(24);
+    @include mq("md") {
+        padding-top: rem(24);
+        padding-bottom: rem(40);
+    }
 }
 
 .campaign-card__category {
@@ -29,6 +36,9 @@
     color: $skyblue;
     padding: rem(4) rem(12);
     border: rem(1) solid $skyblue;
+    @include mq("md") {
+        padding: rem(6) rem(16);
+    }
 }
 
 .campaign-card__title {
@@ -44,6 +54,10 @@
     font-weight: $normal;
     text-align: center;
     margin-top: rem(8);
+    @include mq("md") {
+        font-size: rem(16);
+        margin-top: rem(16);
+    }
 }
 
 .campaign-card__footer {
@@ -54,11 +68,17 @@
     gap: rem(16);
     font-family: 'Lato', sans-serif;
     font-weight: $bold;
+    @include mq("md") {
+        gap: rem(24);
+    }
 }
 
 .campaign-card__old-price {
     font-size: rem(20);
     position: relative;
+    @include mq("md") {
+        font-size: rem(24);
+    }
 }
 .campaign-card__old-price::before {
     position: absolute;
@@ -69,9 +89,15 @@
     background-color: $red;
     left: 0;
     top: 50%;
+    @include mq("md") {
+        width: rem(91);
+    }
 }
 
 .campaign-card__new-price {
     font-size: rem(32);
     color: $skyblue;
+    @include mq("md") {
+        font-size: rem(40);
+    }
 }

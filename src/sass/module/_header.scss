@@ -8,10 +8,20 @@
     z-index: 9000;
     top: 0;
     left: 0;
+    @include mq("md") {
+        height: rem(90);
+    }
 }
 
 .header__inner {
-height: inherit;
+    height: inherit;
+    width: 100%;
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+    @include mq("md") {
+        padding-right: $padding-pc;
+        padding-left: $padding-pc;
+    }
 }
 
 .header__wrapper {
@@ -24,6 +34,9 @@ height: inherit;
 
 .header__logo {
     width: rem(102);
+    @include mq("md") {
+        width: rem(133);
+    }
 }
 
 .header__image {

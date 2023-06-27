@@ -6,6 +6,9 @@
 
 .top-campaign__inner {
     margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(120);
+    }
 }
 
 .top-campaign__section-title {
@@ -14,16 +17,28 @@
 
 .top-campaign__cards {
     margin-top: rem(24);
+    display: flex;
+    gap: rem(24);
+    @include mq("md") {
+        margin-top: rem(40);
+        gap: rem(40);
+    }
 }
 
 .top-campaign__card {
     max-width: rem(280);
+    @include mq("md") {
+        max-width: rem(333);
+    }
 }
 
 .top-campaign__link-button {
     margin-top: rem(40);
     margin-left: auto;
     margin-right: auto;
+    @include mq("md") {
+        margin-top: rem(80);
+    }
 }
 
 
