@@ -2,6 +2,8 @@
 
 .top-information {
     background-color: $lightblue;
+    position: relative;
+    z-index: 2;
 }
 
 .top-information__inner {

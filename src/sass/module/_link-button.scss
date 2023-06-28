@@ -11,8 +11,14 @@
     align-items: center;
     gap: rem(8);
     position: relative;
+    transition: ease .3s;
 }
-.link-button::after {
+.link-button:hover {
+    background-color: $white;
+    border: rem(1) solid $skyblue;
+    color: $skyblue;
+}
+.link-button::before {
     position: absolute;
     content: '';
     top: rem(4);
@@ -21,13 +27,15 @@
     height: rem(54);
     display: inline-block;
     border: rem(1) solid $skyblue;
+    z-index: -1;
 }
 
 .link-button__body {
     display: inline-block;
-    color: $normal;
+    font-weight: $normal;
     font-size: rem(14);
     font-family: $second-font-family;
+    transition: ease .3s;
 }
 
 .link-button__arrow {
@@ -38,4 +46,9 @@
     border-right: 1px solid $white;
     transform: skew(45deg);
     margin-bottom: rem(8);
+    transition: ease .3s;
+}
+.link-button:hover .link-button__arrow {
+    border-bottom: 1px solid $skyblue;
+    border-right: 1px solid $skyblue;
 }

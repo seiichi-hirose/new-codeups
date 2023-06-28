@@ -2,9 +2,8 @@
 
 .top-price {
     background-color: $lightblue;
-    @include mq("md") {
-        position: relative;
-    }
+    position: relative;
+    z-index: 3;
 }
 .top-price::before {
     @include mq("md") {
