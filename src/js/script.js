@@ -66,3 +66,14 @@ color.on('inview', function(){
 
 
 });
+
+
+const swiper1 = new Swiper(".top-fv__swiper", {
+    loop: true, // デフォルトはfalse
+    autoplay: true, // 自動再生
+    effect: 'fade', // フェード
+    speed: 2000, // 2秒かけてフェード
+    autoplay: { // 自動再生
+        delay: 5000, // 1秒後に次のスライド（初期値：3000）
+    },
+});
