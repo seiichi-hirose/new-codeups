@@ -22,4 +22,20 @@ $(window).on("scroll", function () {
     return false;
     });
 
+
+
+  //ハンバーガーメニュー
+  $(".js-hamburger").on("click", function () {
+    $(this,".header").toggleClass("active");
+    $("html").toggleClass("is-fixed");
+
+    if ($(".js-hamburger").hasClass("active")) {
+      $(".js-header-drawer").fadeIn();
+    } else {
+      $(".js-header-drawer").fadeOut();
+    }
+  });
+
+
+
 });

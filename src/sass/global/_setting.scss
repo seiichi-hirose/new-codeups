@@ -45,3 +45,6 @@ body {
   color: $black;
 }
 
+html.is-fixed {
+  overflow: hidden;
+}
