@@ -2,7 +2,7 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
 //トップに戻るボタン スクロール検知
-$(window).on("scroll", function () {
+    $(window).on("scroll", function () {
     // トップから100px以上スクロールしたら
     if (100 < $(this).scrollTop()) {
         // is-showクラスをつける
@@ -24,17 +24,17 @@ $(window).on("scroll", function () {
 
 
 
-  //ハンバーガーメニュー
-  $(".js-hamburger").on("click", function () {
-    $(this,".header").toggleClass("active");
+//ハンバーガーメニュー
+    $(".js-hamburger").on("click", function () {
+    $(this, ".header").toggleClass("active");
     $("html").toggleClass("is-fixed");
 
     if ($(".js-hamburger").hasClass("active")) {
-      $(".js-header-drawer").fadeIn();
+        $(".js-header-drawer").fadeIn();
     } else {
-      $(".js-header-drawer").fadeOut();
+        $(".js-header-drawer").fadeOut();
     }
-  });
+    });
 
 
 
