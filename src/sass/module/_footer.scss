@@ -23,6 +23,7 @@
     display: inline-block;
     width: 100%;
     max-width: rem(120);
+    transition: ease 0.3s;
     @include mq("md") {
         max-width: rem(200);
         margin-right: rem(40);
@@ -46,6 +47,7 @@
 .footer__sns-image {
     width: 100%;
     max-width: rem(24);
+    transition: ease 0.3s;
     @include mq("md") {
         max-width: rem(32);
     }
@@ -110,7 +112,7 @@
 }
 
 .footer__nav-link {
-
+    transition: ease 0.3s;
 }
 
 .footer__nav-right {
@@ -131,3 +133,10 @@
     }
 }
 
+.footer__logo:hover,
+.footer__sns-image:hover,
+.footer__nav-link:hover {
+    @include mq("md") {
+    opacity: 0.6;
+    }
+}
