@@ -34,11 +34,15 @@
 
 
 .header__logo {
-    width: rem(102);
+    width: 100%;
+    max-width: rem(102);
     height: inherit;
     transition: ease 0.3s;
     @include mq("md") {
-        width: rem(133);
+        max-width: rem(120);
+    }
+    @include mq("lg") {
+        max-width: rem(133);
     }
 }
 .header__logo:hover {

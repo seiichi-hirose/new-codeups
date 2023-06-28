@@ -14,9 +14,12 @@
 
 .header-nav__item {
     text-align: center;
-    margin-left: rem(40);
+    margin-left: rem(25);
     height: inherit;
     position: relative;
+    @include mq("lg") {
+        margin-left: rem(40);
+    }
 }
 .header-nav__item::after {
     background-color: $white;
