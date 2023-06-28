@@ -13,6 +13,7 @@
     }
 }
 
+
 .header__inner {
     height: inherit;
     width: 100%;
@@ -34,11 +35,22 @@
 
 .header__logo {
     width: rem(102);
+    height: inherit;
+    transition: ease 0.3s;
     @include mq("md") {
         width: rem(133);
     }
 }
+.header__logo:hover {
+    @include mq("md") {
+    opacity: 0.6;
+    }
+}
 
 .header__image {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
