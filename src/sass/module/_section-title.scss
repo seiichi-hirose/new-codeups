@@ -30,13 +30,13 @@
     font-weight: $normal;
     font-size: rem(12);
     color: $skyblue;
-    margin-top: rem(4);
+    margin-top: 0;
     @include mq("md") {
         margin-top: rem(8);
     }
 }
 .section-title__sub--narrow {
-    margin-top: rem(-20);
+    margin-top: rem(-25);
     @include mq("md") {
         margin-top: rem(-20);
     }

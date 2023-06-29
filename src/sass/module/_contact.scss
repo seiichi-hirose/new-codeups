@@ -13,7 +13,7 @@
     margin: auto;
     width: rem(109);
     height: rem(50);
-    top: rem(-28);
+    top: rem(-24);
     right: rem(15);
     z-index: 40;
     @include mq("md") {
@@ -35,7 +35,7 @@
 }
 .contact__wrapper {
     margin-top: rem(80);
-    padding-bottom: rem(100);
+    padding-bottom: rem(102);
     width: 100%;
     @include mq("md") {
         margin-top: rem(140);
@@ -88,6 +88,10 @@
     font-weight: $normal;
     font-size: rem(16);
 }
+.contact__text--first {
+    letter-spacing: 0.01em;
+    margin-left: rem(-10);
+}
 .contact__text:not(:first-child) {
     margin-top: rem(4);
 }
@@ -108,7 +112,7 @@
 }
 
 .contact__section-title {
-    margin-top: rem(40);
+    margin-top: rem(20);
     @include mq("md") {
         margin-top: 0;
     }
@@ -122,7 +126,7 @@
 }
 
 .contact__link-button {
-    margin-top: rem(40);
+    margin-top: rem(38);
     margin-left: auto;
     margin-right: auto;
 }

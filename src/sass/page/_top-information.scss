@@ -7,7 +7,7 @@
 }
 
 .top-information__inner {
-    margin-top: rem(80);
+    margin-top: rem(83);
     padding-bottom: rem(80);
     @include mq("md") {
         margin-top: rem(140);
@@ -59,7 +59,6 @@
 .top-information__title {
     font-weight: $bold;
     font-size: rem(20);
-    padding-bottom: rem(4);
     border-bottom: rem(1) solid $skyblue;
     @include mq("md") {
         font-size: rem(24);

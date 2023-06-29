@@ -37,8 +37,10 @@
     }
 }
 
-.top-blog__inner {
-    padding-top: rem(80);
+.inner.top-blog__inner {
+    padding-top: rem(77);
+    padding-left: rem(21);
+    padding-right: rem(21);
     @include mq("md") {
         padding-top: rem(100);
     }
@@ -56,7 +58,7 @@
 }
 
 .top-blog__cards {
-    margin-top: rem(24);
+    margin-top: rem(27);
     @include mq("md") {
         display: flex;
         justify-content: space-between;
