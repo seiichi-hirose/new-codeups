@@ -51,8 +51,10 @@
     margin-top: rem(40);
     @include mq("md") {
         margin-top: rem(30);
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: rem(40);
     }
 }
