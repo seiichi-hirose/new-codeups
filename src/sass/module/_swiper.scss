@@ -47,7 +47,9 @@
 }
 // .swiper-button-prev:hover::after,
 // .swiper-button-next:hover::after {
+//   @include mq("md") {
 //     background-color: $skyblue;
+//   }
 // }
 .swiper-button-prev::before {
     position: absolute;
@@ -86,3 +88,12 @@
 //     border-bottom: rem(1) solid $white;
 //     border-right: rem(1) solid $white;
 // }
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::before,
+.swiper-button-prev:hover::before {
+  @include mq("md") {
+    opacity: 0.5;
+  }
+}
