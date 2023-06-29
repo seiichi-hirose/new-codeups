@@ -9,7 +9,10 @@
   position: absolute;
   top: rem(-590);
   width: 0;
-  left: rem(830);
+  left: rem(700);
+  @include mq("lg") {
+    left: rem(800);
+  }
 }
 
 .swiper-button-next::after {
@@ -51,9 +54,12 @@
     border-bottom: rem(1) solid $skyblue;
     border-left: rem(1) solid $skyblue;
     transform: skew(-45deg);
-    top: rem(-280);
-    left: rem(855);
+    top: rem(-278);
+    left: rem(725);
     transition: ease .3s;
+    @include mq("lg") {
+      left: rem(825);
+    }
 }
 .swiper-button-next::before {
     position: absolute;
@@ -64,7 +70,7 @@
     border-bottom: rem(1) solid $skyblue;
     border-right: rem(1) solid $skyblue;
     transform: skew(45deg);
-    top: rem(-280);
+    top: rem(-278);
     right: rem(25);
     transition: ease .3s;
 }
