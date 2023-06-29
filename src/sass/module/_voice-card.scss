@@ -36,6 +36,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        margin-top: rem(25);
     }
 }
 .voice-card__name {
@@ -55,7 +56,7 @@
     font-size: rem(12);
     border: rem(1) solid $skyblue;
     @include mq("md") {
-        padding: rem(6) rem(16);
+        padding: rem(6) rem(15);
     }
 }
 
@@ -67,9 +68,9 @@
     border-bottom: rem(1) solid $skyblue;
     line-height: 1.4;
     @include mq("md") {
-        margin-top: rem(8);
+        margin-top: rem(6);
         font-size: rem(24);
-        line-height: 1.9;
+        line-height: 1.55;
     }
 }
 

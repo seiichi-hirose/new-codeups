@@ -15,8 +15,8 @@
         margin: auto;
         width: rem(194);
         height: rem(181);
-        bottom: rem(-100);
-        right: rem(30);
+        bottom: rem(-89);
+        right: rem(85);
         z-index: 22;
     }
 }
@@ -24,7 +24,7 @@
 .top-about__inner {
     margin-top: rem(82);
     @include mq("md") {
-        margin-top: rem(140);
+        margin-top: rem(130);
     }
 }
 
@@ -44,6 +44,9 @@
     width: 100%;
     aspect-ratio: 345 / 212;
     position: relative;
+    @include mq("md") {
+        margin-top: rem(37);
+    }
 }
 
 .top-about__image2 {
@@ -104,12 +107,19 @@
         font-size: rem(80);
         color: $white;
         line-height: 1.25;
+        margin-left: rem(-6);
+        margin-top: rem(16);
     }
 }
 .top-about__title-indent {
     display: block;
     @include mq("sm") {
         display: inline-block;
+    }
+}
+.top-about__body-right {
+    @include mq("md") {
+        padding-right: rem(6);
     }
 }
 .top-about__copy {

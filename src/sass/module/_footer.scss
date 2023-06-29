@@ -41,6 +41,8 @@
     gap: rem(16);
     @include mq("sm") {
         margin-top: 0;
+        margin-bottom: rem(6);
+        column-gap: rem(21);
     }
 }
 
@@ -98,7 +100,7 @@
         margin-left: rem(80);
     }
     @include mq("lg") {
-        margin-left: rem(118);
+        margin-left: rem(126);
     }
 }
 
@@ -114,7 +116,7 @@
 }
 .footer__nav-unit--bold {
     font-weight: $bold;
-    margin-top: rem(40);
+    margin-top: rem(38);
     position: relative;
 }
 .footer__nav-unit--bold::before {
@@ -150,6 +152,7 @@
     @include mq("md") {
         margin-top: rem(80);
         font-size: rem(14);
+        letter-spacing: 0.005em;
     }
 }
 

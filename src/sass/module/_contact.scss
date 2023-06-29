@@ -19,8 +19,8 @@
     @include mq("md") {
         width: rem(301);
         height: rem(138);
-        right: rem(35);
-        top: rem(-35);
+        right: rem(49);
+        top: rem(-38);
     }
 }
 
@@ -75,7 +75,8 @@
     @include mq("md") {
         display: flex;
         justify-content: space-between;
-        gap: rem(21);
+        column-gap: rem(21);
+        padding-top: rem(24);
     }
 }
 .contact__address {
@@ -91,6 +92,9 @@
 .contact__text--first {
     letter-spacing: 0.01em;
     margin-left: rem(-10);
+    @include mq("md") {
+        margin-left: 0;
+    }
 }
 .contact__text:not(:first-child) {
     margin-top: rem(4);

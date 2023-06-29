@@ -16,7 +16,7 @@
         width: rem(301);
         height: rem(138);
         top: rem(-110);
-        left: rem(80);
+        left: rem(100);
     }
 }
 .top-voice::after {
@@ -29,8 +29,8 @@
         margin: auto;
         width: rem(71);
         height: rem(162);
-        bottom: rem(65);
-        right: rem(165);
+        bottom: rem(69);
+        right: rem(180);
     }
 }
 
@@ -38,7 +38,7 @@
     margin-top: rem(80);
     padding-bottom: rem(80);
     @include mq("md") {
-        margin-top: rem(140);
+        margin-top: rem(130);
         padding-bottom: rem(140);
     }
 }

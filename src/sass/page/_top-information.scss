@@ -19,7 +19,7 @@
     padding-top: rem(80);
     text-align: center;
     @include mq("md") {
-        padding-top: rem(100);
+        padding-top: rem(89);
     }
 }
 .top-information__wrapper {
@@ -52,7 +52,7 @@
 .top-information_body {
     margin-top: rem(24);
     @include mq("md") {
-        margin-top: 0;
+        margin-top: rem(-8);
     }
 }
 
@@ -62,7 +62,6 @@
     border-bottom: rem(1) solid $skyblue;
     @include mq("md") {
         font-size: rem(24);
-        padding-bottom: rem(8);
     }
 }
 

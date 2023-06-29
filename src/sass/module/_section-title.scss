@@ -32,13 +32,13 @@
     color: $skyblue;
     margin-top: 0;
     @include mq("md") {
-        margin-top: rem(8);
+        margin-top: 0;
     }
 }
 .section-title__sub--narrow {
     margin-top: rem(-25);
     @include mq("md") {
-        margin-top: rem(-20);
+        margin-top: rem(-25);
     }
 }
 

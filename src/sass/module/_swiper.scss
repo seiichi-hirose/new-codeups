@@ -11,7 +11,8 @@
   width: 0;
   left: rem(700);
   @include mq("lg") {
-    left: rem(800);
+    left: rem(830);
+    top: rem(-580);
   }
 }
 
@@ -23,7 +24,10 @@
   position: absolute;
   top: rem(-590);
   width: 0;
-  right: 0;
+  right: rem(-10);
+  @include mq("lg") {
+    top: rem(-580);
+  }
 }
 /* 前への矢印カスタマイズ */
 .swiper-button-prev::after {
@@ -54,11 +58,12 @@
     border-bottom: rem(1) solid $skyblue;
     border-left: rem(1) solid $skyblue;
     transform: skew(-45deg);
-    top: rem(-278);
+    top: rem(-280);
     left: rem(725);
     transition: ease .3s;
     @include mq("lg") {
-      left: rem(825);
+      left: rem(855);
+      top: rem(-275);
     }
 }
 .swiper-button-next::before {
@@ -70,9 +75,12 @@
     border-bottom: rem(1) solid $skyblue;
     border-right: rem(1) solid $skyblue;
     transform: skew(45deg);
-    top: rem(-278);
-    right: rem(25);
+    top: rem(-280);
+    right: rem(12);
     transition: ease .3s;
+    @include mq("lg") {
+      top: rem(-275);
+    }
 }
 // .swiper-button-next:hover .swiper-button-next::before {
 //     border-bottom: rem(1) solid $white;
