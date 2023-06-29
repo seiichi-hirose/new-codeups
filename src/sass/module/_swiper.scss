@@ -1,5 +1,10 @@
 @use "global" as *;
 
+
+.swiper.top-campaign__container {
+  padding-bottom: rem(10);
+  padding-left: rem(10);
+}
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev::after {
   bottom: 0;
