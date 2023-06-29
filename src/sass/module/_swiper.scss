@@ -1,1 +1,74 @@
 @use "global" as *;
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev::after {
+  bottom: 0;
+  content: "";
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: rem(-590);
+  width: 0;
+  left: rem(830);
+}
+
+.swiper-button-next::after {
+  bottom: 0;
+  content: "";
+  height: 0;
+  margin: auto;
+  position: absolute;
+  top: rem(-590);
+  width: 0;
+  right: 0;
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev::after {
+    border: rem(1) solid $skyblue;
+    width: rem(80);
+    height: rem(80);
+    border-radius: 50%;
+    transition: ease .3s;
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next::after {
+    border: rem(1) solid $skyblue;
+    width: rem(80);
+    height: rem(80);
+    border-radius: 50%;
+    transition: ease .3s;
+}
+// .swiper-button-prev:hover::after,
+// .swiper-button-next:hover::after {
+//     background-color: $skyblue;
+// }
+.swiper-button-prev::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: rem(40);
+    height: rem(8);
+    border-bottom: rem(1) solid $skyblue;
+    border-left: rem(1) solid $skyblue;
+    transform: skew(-45deg);
+    top: rem(-280);
+    left: rem(855);
+    transition: ease .3s;
+}
+.swiper-button-next::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: rem(40);
+    height: rem(8);
+    border-bottom: rem(1) solid $skyblue;
+    border-right: rem(1) solid $skyblue;
+    transform: skew(45deg);
+    top: rem(-280);
+    right: rem(25);
+    transition: ease .3s;
+}
+// .swiper-button-next:hover .swiper-button-next::before {
+//     border-bottom: rem(1) solid $white;
+//     border-right: rem(1) solid $white;
+// }

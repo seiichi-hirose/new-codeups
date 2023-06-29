@@ -68,12 +68,44 @@ color.on('inview', function(){
 });
 
 
-const swiper1 = new Swiper(".top-fv__swiper", {
+const swiper1 = new Swiper(".js-top-fv", {
     loop: true, // デフォルトはfalse
     autoplay: true, // 自動再生
     effect: 'fade', // フェード
     speed: 2000, // 2秒かけてフェード
     autoplay: { // 自動再生
         delay: 5000, // 1秒後に次のスライド（初期値：3000）
+    },
+});
+
+const swiper2 = new Swiper(".js-top-campaign", {
+    loop: true, // デフォルトはfalse
+    centeredSlides: true,
+    autoplay: true, // 自動再生
+    autoplay: { // 自動再生
+        delay: 4000, // 4秒後に次のスライド
+        disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+      },
+    speed: 1000,
+    autoHeight: true,
+      // スライドの表示枚数
+    slidesPerView: 1,
+    spaceBetween: 24,
+    breakpoints: {
+        500: {
+            slidesPerView: 2,
+            centeredSlides: false,
+        },
+        // スライドの表示枚数：769px以上の場合
+        769: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            centeredSlides: true,
+        }
+    },
+      // 前後の矢印
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
