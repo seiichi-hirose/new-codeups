@@ -63,10 +63,12 @@
 .top-blog__cards {
     margin-top: rem(27);
     @include mq("md") {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         margin-top: rem(80);
-        column-gap: rem(40);
+        gap: rem(40);
     }
 }
 
