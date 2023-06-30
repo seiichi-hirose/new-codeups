@@ -102,7 +102,7 @@ const swiper2 = new Swiper(".js-top-campaign", {
             // centeredSlides: true,
         },
         1260: {
-            slidesPerView: 3.3,
+            slidesPerView: 3.47,
             spaceBetween: 40,
             // centeredSlides: true,
         }
