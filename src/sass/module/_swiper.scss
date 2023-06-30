@@ -24,7 +24,7 @@
   left: rem(800);
   @include mq("lg") {
     left: rem(830);
-    top: rem(-580);
+    top: rem(-600);
   }
   @include mq("ex") {
     top: rem(-680);
@@ -41,7 +41,7 @@
   width: 0;
   right: rem(-10);
   @include mq("lg") {
-    top: rem(-580);
+    top: rem(-600);
   }
   @include mq("ex") {
     top: rem(-680);
@@ -83,7 +83,7 @@
     transition: ease .3s;
     @include mq("lg") {
       left: rem(855);
-      top: rem(-275);
+      top: rem(-285);
     }
     @include mq("ex") {
       top: rem(-325);
@@ -102,7 +102,7 @@
     right: rem(12);
     transition: ease .3s;
     @include mq("lg") {
-      top: rem(-275);
+      top: rem(-285);
     }
     @include mq("ex") {
       top: rem(-325);
