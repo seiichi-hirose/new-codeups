@@ -13,11 +13,11 @@
     color: $white;
     @include mq(md) {
         opacity: 0;
-      }
+    }
 }
 
 .header-drawer__inner {
-    
+
 }
 
 .header-drawer__top {
@@ -41,7 +41,8 @@
 .header-drawer__body {
     display: flex;
     column-gap: rem(14);
-    width: rem(360);
+    width: 100%;
+    max-width: rem(360);
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
@@ -90,6 +91,6 @@
 }
 
 .header-drawer__nav-right {
-}  
+}
 
 
