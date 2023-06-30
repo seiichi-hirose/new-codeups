@@ -15,7 +15,8 @@ $mediaquerys: (
     sm: 500,
     md: 768,
     lg: 1090,
-    xl: 1440,
+    xl: 1260,
+    ex: 1600,
   );
 
   //メディアクエリー
@@ -24,11 +25,13 @@ $mediaquerys: (
     md: "screen and (min-width: #{map-get($breakpoints,'md')}px)",
     lg: "screen and (min-width: #{map-get($breakpoints,'lg')}px)",
     xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+    ex: "screen and (min-width: #{map-get($breakpoints,'ex')}px)",
   );
 
 } @else {
   $breakpoints: (
-    xl: 1440,
+    ex: 1599,
+    xl: 1259,
     lg: 1089,
     md: 767,
     sm: 499,
@@ -38,6 +41,7 @@ $mediaquerys: (
     md: "screen and (max-width: #{map-get($breakpoints,'md')}px)",
     lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
     xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
+    ex: "screen and (min-width: #{map-get($breakpoints,'ex')}px)",
   );
 
 

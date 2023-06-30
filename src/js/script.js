@@ -80,7 +80,7 @@ const swiper1 = new Swiper(".js-top-fv", {
 
 const swiper2 = new Swiper(".js-top-campaign", {
     loop: true, // デフォルトはfalse
-    centeredSlides: true,
+    // centeredSlides: true,
     autoplay: true, // 自動再生
     autoplay: { // 自動再生
         delay: 4000, // 4秒後に次のスライド
@@ -89,18 +89,22 @@ const swiper2 = new Swiper(".js-top-campaign", {
     speed: 1000,
     autoHeight: true,
       // スライドの表示枚数
-    slidesPerView: 1,
+    slidesPerView: 1.25,
     spaceBetween: 24,
     breakpoints: {
-        500: {
-            slidesPerView: 2,
-            centeredSlides: false,
+        660: {
+            slidesPerView: 2.25,
         },
         // スライドの表示枚数：769px以上の場合
         769: {
-            slidesPerView: 3,
+            slidesPerView: 2.6,
             spaceBetween: 40,
-            centeredSlides: true,
+            // centeredSlides: true,
+        },
+        1260: {
+            slidesPerView: 3.3,
+            spaceBetween: 40,
+            // centeredSlides: true,
         }
     },
       // 前後の矢印
