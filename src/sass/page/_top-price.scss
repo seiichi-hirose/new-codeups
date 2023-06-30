@@ -53,6 +53,7 @@
     width: 100%;
     aspect-ratio: 345 / 227;
     @include mq("md") {
+        aspect-ratio: 492 / 746;
         margin-top: 0;
         max-width: rem(492);
     }
