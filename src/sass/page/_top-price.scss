@@ -112,7 +112,10 @@
 }
 
 .top-price__value {
-
+    margin-left: rem(15);
+    @include mq("md") {
+        margin-left: rem(20);
+    }
 }
 
 .top-price__link-button {
