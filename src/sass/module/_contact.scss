@@ -113,7 +113,12 @@
         min-height: rem(148);
     }
 }
-
+.contact__right {
+    @include mq("md") {
+        padding-left: rem(81);
+        border-left: rem(1) solid $skyblue;
+    }
+}
 .contact__section-title {
     margin-top: rem(20);
     @include mq("md") {
