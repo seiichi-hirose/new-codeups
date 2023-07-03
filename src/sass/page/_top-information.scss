@@ -53,8 +53,10 @@
 }
 
 .top-information_body {
+    width: 100%;
     margin-top: rem(24);
     @include mq("md") {
+        max-width: rem(492);
         margin-top: rem(-8);
     }
 }
