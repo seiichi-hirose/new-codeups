@@ -74,7 +74,7 @@
 
 .top-blog__card {
     width: 100%;
-    max-width: rem(450);
+    max-width: rem(600);
     margin-inline: auto;
     @include mq("md") {
         max-width: rem(333);
