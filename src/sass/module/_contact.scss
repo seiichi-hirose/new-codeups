@@ -35,6 +35,7 @@
     margin-left: auto;
     margin-right: auto;
     @include mq("md") {
+        max-width: 100%;
         margin-right: 0;
         margin-left: 0;
         width: 100%;
@@ -134,10 +135,12 @@
     margin-top: rem(8);
 }
 
-.contact__link-button {
+.contact__link-buttons {
     margin-top: rem(38);
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: rem(206);
 }
 
 

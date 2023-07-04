@@ -46,10 +46,11 @@
     }
 }
 
-.top-campaign__link-button {
+.top-campaign__link-buttons {
     margin-top: rem(30);
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: rem(206);
+    margin-inline: auto;
     @include mq("md") {
         margin-top: rem(70);
     }

@@ -88,10 +88,12 @@
     }
 }
 
-.top-blog__link-button {
+.top-blog__link-buttons {
     margin-top: rem(40);
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: rem(206);
     @include mq("md") {
         margin-top: rem(80);
     }
