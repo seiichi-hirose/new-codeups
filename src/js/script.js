@@ -87,18 +87,19 @@ const swiper2 = new Swiper(".js-top-campaign", {
         disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
       },
     speed: 1000,
-    autoHeight: true,
+
       // スライドの表示枚数
-    slidesPerView: 1.25,
+    slidesPerView: 1.26,
     spaceBetween: 24,
     breakpoints: {
         660: {
             slidesPerView: 2.25,
+            spaceBetween: 24,
         },
         // スライドの表示枚数：769px以上の場合
         769: {
             slidesPerView: 2.6,
-            spaceBetween: 40,
+            spaceBetween: 30,
             // centeredSlides: true,
         },
         1260: {

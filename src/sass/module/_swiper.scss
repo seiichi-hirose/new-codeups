@@ -10,114 +10,63 @@
   }
 }
 
-
-
-/* 前へ次への矢印カスタマイズ */
-.swiper-button-prev::after {
-  bottom: 0;
-  content: "";
-  height: 0;
-  margin: auto;
+.swiper-button-prev {
   position: absolute;
-  top: rem(-590);
-  width: 0;
-  left: rem(800);
-  @include mq("lg") {
-    left: rem(830);
-    top: rem(-600);
-  }
-  @include mq("ex") {
-    top: rem(-680);
-  }
-}
-
-.swiper-button-next::after {
-  bottom: 0;
   content: "";
-  height: 0;
+  top: rem(-106);
+  right: rem(-700);
   margin: auto;
-  position: absolute;
-  top: rem(-590);
-  width: 0;
-  right: rem(-10);
-  @include mq("lg") {
-    top: rem(-600);
-  }
-  @include mq("ex") {
-    top: rem(-680);
-  }
+  border: rem(1) solid $skyblue;
+  width: rem(80);
+  height: rem(80);
+  border-radius: 50%;
+  transition: ease .3s;
 }
-/* 前への矢印カスタマイズ */
-.swiper-button-prev::after {
-    border: rem(1) solid $skyblue;
+.swiper-button-next {
+  position: absolute;
+  content: "";
+  top: rem(-106);
+  right: 0;
+  margin: auto;
+      border: rem(1) solid $skyblue;
     width: rem(80);
     height: rem(80);
     border-radius: 50%;
     transition: ease .3s;
 }
-/* 次への矢印カスタマイズ */
-.swiper-button-next::after {
-    border: rem(1) solid $skyblue;
-    width: rem(80);
-    height: rem(80);
-    border-radius: 50%;
-    transition: ease .3s;
-}
-// .swiper-button-prev:hover::after,
-// .swiper-button-next:hover::after {
-//   @include mq("md") {
-//     background-color: $skyblue;
-//   }
-// }
-.swiper-button-prev::before {
-    position: absolute;
-    content: "";
-    display: inline-block;
+.swiper-button-prev--arrow {
+    display: block;
     width: rem(40);
     height: rem(8);
     border-bottom: rem(1) solid $skyblue;
     border-left: rem(1) solid $skyblue;
     transform: skew(-45deg);
-    top: rem(-280);
-    left: rem(825);
-    transition: ease .3s;
-    @include mq("lg") {
-      left: rem(855);
-      top: rem(-285);
-    }
-    @include mq("ex") {
-      top: rem(-325);
-    }
-}
-.swiper-button-next::before {
     position: absolute;
-    content: "";
-    display: inline-block;
+    top: 40%;
+    left: 30%;
+}
+.swiper-button-next--arrow {
+    display: block;
     width: rem(40);
     height: rem(8);
     border-bottom: rem(1) solid $skyblue;
     border-right: rem(1) solid $skyblue;
     transform: skew(45deg);
-    top: rem(-280);
-    right: rem(12);
-    transition: ease .3s;
-    @include mq("lg") {
-      top: rem(-285);
-    }
-    @include mq("ex") {
-      top: rem(-325);
-    }
+    position: absolute;
+    top: 40%;
+    left: 20%;
 }
-// .swiper-button-next:hover .swiper-button-next::before {
-//     border-bottom: rem(1) solid $white;
-//     border-right: rem(1) solid $white;
-// }
 
-.swiper-button-next:hover::after,
-.swiper-button-prev:hover::after,
-.swiper-button-next:hover::before,
-.swiper-button-prev:hover::before {
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
   @include mq("md") {
     opacity: 0.5;
   }
+}
+
+
+.swiper-slide {
+  height: auto;
 }

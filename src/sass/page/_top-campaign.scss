@@ -29,17 +29,20 @@
     }
 }
 .top-campaign__cards {
+    display: flex;
     // column-gap: rem(24);
     @include mq("md") {
+        width: calc(33.33333333% - rem(40) * 2 / 3);
         // column-gap: rem(40);
     }
 }
 
 .top-campaign__card {
-    width: 100%;
-    min-width: rem(280);
+     width: rem(280);
+     margin-right: rem(24);
     @include mq("md") {
-        min-width: rem(333);
+        // margin-right: rem(40);
+        width: rem(333);
     }
 }
 
