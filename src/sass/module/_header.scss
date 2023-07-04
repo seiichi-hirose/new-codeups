@@ -39,11 +39,11 @@
     height: inherit;
     transition: ease 0.3s;
     @include mq("md") {
-        max-width: rem(120);
-    }
-    @include mq("lg") {
         max-width: rem(133);
     }
+    // @include mq("lg") {
+    //     max-width: rem(133);
+    // }
 }
 .header__logo:hover {
     @include mq("md") {

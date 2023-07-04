@@ -70,10 +70,6 @@
         margin-top: rem(14);
         line-height: 1.55;
     }
-    @include mq("lg") {
-        margin-top: rem(6);
-        font-size: rem(24);
-    }
 }
 
 .voice-card__figure {
