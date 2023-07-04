@@ -10,8 +10,8 @@
     @include mq("md") {
         margin-top: rem(111);
         max-width: $inner + strip-unit($padding-pc) * 2;
-        padding-right: rem(35);
-        padding-left: rem(35);
+        padding-right: rem(40);
+        padding-left: rem(40);
         margin-left: auto;
         margin-right: auto;
     }
