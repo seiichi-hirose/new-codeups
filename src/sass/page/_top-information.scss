@@ -16,8 +16,11 @@
     }
 }
 
-.top-information__inner {
-
+.inner.top-information__inner {
+    max-width: rem(600);
+    @include mq("md") {
+        max-width: $inner + strip-unit($padding-pc) * 2;
+    }
 }
 
 .top-information__section-title {
@@ -26,12 +29,8 @@
     }
 }
 .top-information__wrapper {
-    width: 100%;
-    max-width: rem(600);
     margin-top: rem(24);
-    margin-inline: auto;
     @include mq("md") {
-        max-width: 100%;
         margin-top: rem(40);
         display: flex;
         justify-content: space-between;

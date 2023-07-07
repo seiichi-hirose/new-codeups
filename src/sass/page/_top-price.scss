@@ -13,8 +13,12 @@
         padding-bottom: rem(103);
     }
 }
-.top-price__inner {
-
+.inner.top-price__inner {
+    width: 100%;
+    max-width: rem(600);
+    @include mq("md") {
+        max-width: $inner + strip-unit($padding-pc) * 2;
+    }
 }
 
 .top-price__section-title {
@@ -22,12 +26,8 @@
 }
 
 .top-price__wrapper {
-    width: 100%;
-    max-width: rem(600);
-    margin-inline: auto;
     margin-top: rem(30);
     @include mq("md") {
-        max-width: 100%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
