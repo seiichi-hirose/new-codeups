@@ -44,10 +44,14 @@
         background-repeat: no-repeat;
         background-size: contain;
         margin: auto;
-        width: rem(437);
-        height: rem(201);
+        width: rem(340);
+        height: rem(162);
         bottom: rem(-180);
         left: rem(-80);
+    }
+    @include mq("lg") {
+        width: rem(437);
+        height: rem(201);
     }
 }
 

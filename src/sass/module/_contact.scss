@@ -54,6 +54,10 @@
     top: rem(-24);
     right: rem(15);
     z-index: 40;
+    @include mq("sm") {
+        width: rem(160);
+        height: rem(80);
+    }
     @include mq("md") {
         width: rem(301);
         height: rem(138);
