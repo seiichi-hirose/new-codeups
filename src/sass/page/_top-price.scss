@@ -5,20 +5,6 @@
     position: relative;
     z-index: 3;
 }
-.top-price::before {
-    @include mq("md") {
-        position: absolute;
-        content: '';
-        background-image: url(../../assets/images/common/top_contact_01-sp.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: auto;
-        width: rem(437);
-        height: rem(201);
-        bottom: rem(60);
-        left: rem(100);
-    }
-}
 
 .top-price__inner {
     padding-top: rem(80);
@@ -45,8 +31,24 @@
         justify-content: space-between;
         gap: rem(93);
         margin-top: rem(38);
+        position: relative;;
     }
 }
+.top-price__wrapper::before {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/common/top_contact_01-sp.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+        width: rem(437);
+        height: rem(201);
+        bottom: rem(-180);
+        left: rem(-80);
+    }
+}
+
 
 .top-price__figure {
     margin-top: rem(24);
