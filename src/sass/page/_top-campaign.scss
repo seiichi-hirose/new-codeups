@@ -3,12 +3,29 @@
 .top-campaign {
     width: 100%;
 }
-
-.top-campaign__inner {
+.top-campaign.top-campaign--layout {
     margin-top: rem(40);
-    margin-left: rem(10);
     @include mq("md") {
         margin-top: rem(111);
+    }
+}
+.inner {
+    width: 100%;
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+    margin-right: auto;
+    margin-left: auto;
+    @include mq("md") {
+      max-width: $inner + strip-unit($padding-pc) * 2;
+      padding-right: $padding-pc;
+      padding-left: $padding-pc;
+    }
+  }
+.top-campaign__inner {
+
+    margin-left: rem(10);
+    @include mq("md") {
+
         max-width: $inner + strip-unit($padding-pc) * 2;
         padding-right: rem(40);
         padding-left: rem(40);

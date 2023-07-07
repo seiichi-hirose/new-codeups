@@ -21,17 +21,14 @@
         z-index: -1;
     }
 }
-
-.inner.top-blog__inner {
+.top-blog.top-blog--layout {
     padding-top: rem(77);
-    // padding-left: rem(21);
-    // padding-right: rem(21);
     @include mq("md") {
         padding-top: rem(88);
-        // padding-left: rem(40);
-        // padding-right: rem(40);
-        // max-width: rem(1160);
     }
+}
+.inner.top-blog__inner {
+
 }
 
 .top-blog__section-title {

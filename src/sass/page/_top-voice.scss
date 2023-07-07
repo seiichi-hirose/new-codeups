@@ -5,14 +5,16 @@
         position: relative;
     }
 }
-
-.top-voice__inner {
+.top-voice.top-voice--layout {
     margin-top: rem(80);
     padding-bottom: rem(80);
     @include mq("md") {
         margin-top: rem(130);
         padding-bottom: rem(140);
     }
+}
+.top-voice__inner {
+
 }
 
 .top-voice__section-title {

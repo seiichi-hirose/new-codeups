@@ -5,13 +5,15 @@
 
     }
 }
-
-.top-about__inner {
+.top-about.top-about--layout {
     margin-top: rem(82);
-    width: 100%;
     @include mq("md") {
         margin-top: rem(130);
     }
+}
+
+.top-about__inner {
+
 }
 
 .top-about__wrapper {

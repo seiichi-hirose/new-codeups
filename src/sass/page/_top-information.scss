@@ -5,14 +5,17 @@
     position: relative;
     z-index: 2;
 }
-
-.top-information__inner {
+.top-information.top-information--layout {
     margin-top: rem(83);
     padding-bottom: rem(80);
     @include mq("md") {
         margin-top: rem(140);
         padding-bottom: rem(100);
     }
+}
+
+.top-information__inner {
+
 }
 
 .top-information__section-title {
