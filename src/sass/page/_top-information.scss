@@ -7,9 +7,11 @@
 }
 .top-information.top-information--layout {
     margin-top: rem(83);
+    padding-top: rem(80);
     padding-bottom: rem(80);
     @include mq("md") {
         margin-top: rem(140);
+        padding-top: rem(89);
         padding-bottom: rem(100);
     }
 }
@@ -19,10 +21,8 @@
 }
 
 .top-information__section-title {
-    padding-top: rem(80);
     text-align: center;
     @include mq("md") {
-        padding-top: rem(89);
     }
 }
 .top-information__wrapper {

@@ -5,14 +5,16 @@
     position: relative;
     z-index: 3;
 }
-
-.top-price__inner {
+.top-price.top-price--layout {
     padding-top: rem(80);
     padding-bottom: rem(80);
     @include mq("md") {
         padding-top: rem(93);
         padding-bottom: rem(103);
     }
+}
+.top-price__inner {
+
 }
 
 .top-price__section-title {
