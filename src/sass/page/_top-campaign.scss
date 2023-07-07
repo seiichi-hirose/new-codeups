@@ -55,11 +55,9 @@
     }
 }
 
-.top-campaign__link-buttons {
+.top-campaign__button-layout{
     margin-top: rem(30);
-    width: 100%;
-    max-width: rem(206);
-    margin-inline: auto;
+    text-align: center;
     @include mq("md") {
         margin-top: rem(70);
     }

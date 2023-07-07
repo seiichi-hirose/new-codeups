@@ -1,20 +1,16 @@
 @use "global" as *;
 
 
-.link-buttons {
-    position: relative;
-}
 .link-button {
     background-color: $skyblue;
-    display: block;
     width: rem(202);
     height: rem(54);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: rem(8);
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     transition: ease .3s;
     border: rem(1) solid $skyblue;
 }
@@ -49,18 +45,6 @@
     transform: scale(1, 1);
 }
 
-.link-buttons__frame {
-    position: absolute;
-    top: rem(4);
-    left: rem(4);
-    width: rem(202);
-    height: rem(54);
-    display: block;
-    margin: auto;
-    border: rem(1) solid $skyblue;
-    z-index: -1;
-}
-
 .link-button__text {
     position: relative;
     display: inline-block;
@@ -89,8 +73,8 @@
     transition: ease .3s;
     position: relative;
     }
-    
-    .link-button:hover .link-button__arrow {
-    border-bottom: 1px solid $skyblue;
-    border-right: 1px solid $skyblue;
-    }
+
+.link-button:hover .link-button__arrow {
+border-bottom: 1px solid $skyblue;
+border-right: 1px solid $skyblue;
+}
