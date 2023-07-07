@@ -14,11 +14,9 @@
 
 .header-nav__item {
     text-align: center;
-    margin-left: rem(23);
     height: inherit;
     position: relative;
     @include mq("lg") {
-        margin-left: rem(40);
     }
 }
 .header-nav__item::after {
@@ -46,6 +44,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 rem(12);
+    @include mq("lg") {
+        padding: 0 rem(20);
+    }
 }
 
 .header-nav__link-ja {

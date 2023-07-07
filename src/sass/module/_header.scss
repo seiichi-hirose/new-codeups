@@ -13,15 +13,26 @@
     }
 }
 
-
-.header__inner {
-    height: inherit;
+.inner {
     width: 100%;
     padding-right: $padding-sp;
     padding-left: $padding-sp;
+    margin-right: auto;
+    margin-left: auto;
     @include mq("md") {
-        padding-right: $padding-pc;
-        padding-left: $padding-pc;
+      max-width: $inner + strip-unit($padding-pc) * 2;
+      padding-right: $padding-pc;
+      padding-left: $padding-pc;
+    }
+  }
+.inner.header__inner {
+    height: inherit;
+    @include mq("md") {
+        max-width: 100%;
+        padding-right: rem(28);
+    }
+    @include mq("lg") {
+        padding-right: rem(20);
     }
 }
 
