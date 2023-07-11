@@ -4,7 +4,7 @@
     text-align: center;
     position: relative;
 }
-.contact.contact--layout {
+.contact.top-contact {
     margin-top: rem(80);
     @include mq("md") {
         margin-top: rem(140);
@@ -23,18 +23,17 @@
     }
   }
 .inner.contact__inner {
-    width: 86%;
-    max-width: rem(600);
+    width: 100%;
+    max-width: rem(697);
     margin-left: auto;
     margin-right: auto;
     @include mq("md") {
         max-width: $inner + strip-unit($padding-pc) * 2;
-        width: 100%;
     }
 }
 .contact__wrapper {
     @include mq("md") {
-        padding: rem(80) rem(112) rem(80) rem(50);
+        padding: rem(80) rem(50) rem(80) rem(50);
         box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
         display: flex;
         justify-content: space-between;
@@ -69,7 +68,9 @@
     }
 }
 .contact__left {
-    width: 100%;
+    width: 85.5%;
+    max-width: 100%;
+    margin-inline: auto;
     @include mq("md") {
         width: 47.93%;
         max-width: rem(440);
@@ -137,8 +138,9 @@
 .contact__right {
     width: 100%;
     @include mq("md") {
-        width: 43.13%;
-        padding-left: rem(81);
+        width: 46.735%;
+        max-width: 100%;
+        padding-left: rem(10);
         border-left: rem(1) solid $skyblue;
     }
 }
