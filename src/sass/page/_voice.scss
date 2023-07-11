@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.top-voice {
+.voice {
     @include mq("md") {
         position: relative;
     }
 }
-.top-voice.top-voice--layout {
+.voice.top-voice {
     margin-top: rem(80);
     padding-bottom: rem(80);
     @include mq("md") {
@@ -13,22 +13,22 @@
         padding-bottom: rem(140);
     }
 }
-.top-voice__inner {
+.voice__inner {
 
 }
 
-.top-voice__section-title {
+.voice__section-title {
     text-align: center;
 }
 
-.top-voice__cards {
+.voice__cards {
     margin-top: rem(40);
     @include mq("md") {
         margin-top: rem(30);
         position: relative;
     }
 }
-.top-voice__cards::before {
+.voice__cards::before {
     @include mq("md") {
         position: absolute;
         content: '';
@@ -42,7 +42,7 @@
         left: rem(-80);
     }
 }
-.top-voice__cards::after {
+.voice__cards::after {
     @include mq("md") {
         position: absolute;
         content: '';
@@ -57,7 +57,7 @@
     }
 }
 
-.top-voice__button-layout {
+.voice__button-layout {
     margin-top: rem(40);
     text-align: center;
     @include mq("md") {

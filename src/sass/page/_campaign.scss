@@ -1,17 +1,17 @@
 @use "global" as *;
 
-.top-campaign {
+.campaign {
     width: 100%;
     // overflow-x: hidden;
 }
-.top-campaign.top-campaign--layout {
+.campaign.top-campaign {
     margin-top: rem(40);
     @include mq("md") {
         margin-top: rem(111);
     }
 }
 
-.inner.top-campaign__inner {
+.inner.campaign__inner {
     width: auto;
     padding-right: 0;
     padding-left: 0;
@@ -26,10 +26,10 @@
     }
 }
 
-.top-campaign__section-title {
+.campaign__section-title {
     text-align: center;
 }
-.top-campaign__container {
+.campaign__container {
     width: 100%;
     margin-top: rem(24);
     @include mq("md") {
@@ -37,7 +37,7 @@
         margin-top: rem(40);
     }
 }
-.top-campaign__cards {
+.campaign__cards {
     display: flex;
     // column-gap: rem(24);
     @include mq("md") {
@@ -46,7 +46,7 @@
     }
 }
 
-.top-campaign__card {
+.campaign__card {
      width: rem(280);
      margin-right: rem(24);
     @include mq("md") {
@@ -55,7 +55,7 @@
     }
 }
 
-.top-campaign__button-layout{
+.campaign__button-layout{
     margin-top: rem(30);
     text-align: center;
     @include mq("md") {

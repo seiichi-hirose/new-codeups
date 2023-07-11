@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.top-price {
+.price {
     background-color: $lightblue;
     position: relative;
     z-index: 3;
 }
-.top-price.top-price--layout {
+.price.top-price {
     padding-top: rem(80);
     padding-bottom: rem(80);
     @include mq("md") {
@@ -13,7 +13,7 @@
         padding-bottom: rem(103);
     }
 }
-.inner.top-price__inner {
+.inner.price__inner {
     width: 100%;
     max-width: rem(600);
     @include mq("md") {
@@ -21,11 +21,11 @@
     }
 }
 
-.top-price__section-title {
+.price__section-title {
     text-align: center;
 }
 
-.top-price__wrapper {
+.price__wrapper {
     margin-top: rem(30);
     @include mq("md") {
         display: flex;
@@ -36,7 +36,7 @@
         position: relative;;
     }
 }
-.top-price__wrapper::before {
+.price__wrapper::before {
     @include mq("md") {
         position: absolute;
         content: '';
@@ -56,7 +56,7 @@
 }
 
 
-.top-price__figure {
+.price__figure {
     margin-top: rem(24);
     width: 100%;
     aspect-ratio: 345 / 227;
@@ -67,13 +67,13 @@
     }
 }
 
-.top-price__image {
+.price__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.top-price__left {
+.price__left {
     width: 100%;
     margin-top: rem(35);
     @include mq("md") {
@@ -82,28 +82,28 @@
     }
 }
 
-.top-price__table {
+.price__table {
 
 }
-.top-price__table:not(:first-child) {
+.price__table:not(:first-child) {
     @include mq("md") {
         margin-top: rem(40);
     }
     margin-top: rem(39);
 }
 
-.top-price__title {
+.price__title {
     font-weight: $bold;
     font-size: rem(16);
     padding-bottom: rem(4);
     border-bottom: rem(1) solid $skyblue;
 }
 
-.top-pirce__body {
+.pirce__body {
 
 }
 
-.top-price__line {
+.price__line {
     margin-top: rem(11);
     display: flex;
     justify-content: space-between;
@@ -115,18 +115,18 @@
     }
 }
 
-.top-price__course {
+.price__course {
 
 }
 
-.top-price__value {
+.price__value {
     margin-left: rem(15);
     @include mq("md") {
         margin-left: rem(20);
     }
 }
 
-.top-price__button-layout {
+.price__button-layout {
     margin-top: rem(40);
     text-align: center;
     @include mq("md") {

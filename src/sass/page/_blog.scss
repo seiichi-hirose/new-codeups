@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.top-blog {
+.blog {
     @include mq("md") {
         position: relative;
     }
 }
-.top-blog::before {
+.blog::before {
     @include mq("md") {
         position: absolute;
         content: '';
@@ -21,35 +21,35 @@
         z-index: -1;
     }
 }
-.top-blog.top-blog--layout {
+.blog.top-blog {
     padding-top: rem(77);
     @include mq("md") {
         padding-top: rem(88);
     }
 }
-.inner.top-blog__inner {
+.inner.blog__inner {
 
 }
 
-.top-blog__section-title {
+.blog__section-title {
     text-align: center;
 }
-.top-blog__sub-title,
-.top-blog__main-title::first-letter,
-.top-blog__main-title {
+.blog__sub-title,
+.blog__main-title::first-letter,
+.blog__main-title {
     @include mq("md") {
         color: $white;
     }
 }
 
-.top-blog__cards {
+.blog__cards {
     margin-top: rem(27);
     @include mq("md") {
         position: relative;
         margin-top: rem(80);
     }
 }
-.top-blog__cards::after {
+.blog__cards::after {
     @include mq("md") {
         position: absolute;
         content: '';
@@ -65,7 +65,7 @@
     }
 }
 
-.top-blog__button-layout {
+.blog__button-layout {
     margin-top: rem(40);
     text-align: center;
     @include mq("md") {

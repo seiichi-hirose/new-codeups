@@ -1,7 +1,7 @@
 @use "global" as *;
 
 
-.swiper.top-campaign__frame {
+.swiper.campaign__frame {
   padding-bottom: rem(10);
   padding-left: rem(5);
   @include mq("md") {
