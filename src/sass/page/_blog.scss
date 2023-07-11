@@ -21,6 +21,21 @@
         z-index: -1;
     }
 }
+.blog::after {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/common/top_illustration_02.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+        width: rem(437);
+        height: rem(201);
+        top: rem(30);
+        left: calc(50% - min(50%, rem(620)));
+        z-index: -1;
+    }
+}
 .blog.top-blog {
     padding-top: rem(77);
     @include mq("md") {
@@ -47,21 +62,6 @@
     @include mq("md") {
         position: relative;
         margin-top: rem(80);
-    }
-}
-.blog__cards::after {
-    @include mq("md") {
-        position: absolute;
-        content: '';
-        background-image: url(../../assets/images/common/top_illustration_02.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: auto;
-        width: rem(437);
-        height: rem(201);
-        top: rem(-221);
-        left: rem(-80);
-        z-index: -1;
     }
 }
 

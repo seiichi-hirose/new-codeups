@@ -4,6 +4,29 @@
     text-align: center;
     position: relative;
 }
+.contact__wrapper::after {
+    position: absolute;
+    content: '';
+    background-image: url(../../assets/images/common/top_contact_01-sp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    width: rem(109);
+    height: rem(50);
+    top: rem(-24);
+    right: rem(15);
+    z-index: 40;
+    @include mq("sm") {
+        width: rem(160);
+        height: rem(80);
+    }
+    @include mq("md") {
+        width: rem(301);
+        height: rem(138);
+        right: calc(50% - min(50%, rem(670)));
+        top: rem(-38);
+    }
+}
 .contact.top-contact {
     margin-top: rem(80);
     @include mq("md") {
@@ -38,35 +61,9 @@
         display: flex;
         justify-content: space-between;
         gap: rem(82);
-        position: relative;
     }
 }
-.contact__wrapper::after {
-    position: absolute;
-    content: '';
-    background-image: url(../../assets/images/common/top_contact_01-sp.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: auto;
-    width: rem(109);
-    height: rem(50);
-    top: rem(-24);
-    right: rem(15);
-    z-index: 40;
-    @include mq("sm") {
-        width: rem(160);
-        height: rem(80);
-    }
-    @include mq("md") {
-        width: rem(301);
-        height: rem(138);
-        right: rem(-40);
-        top: rem(-38);
-    }
-    @include mq("ex") {
-        right: rem(-130);
-    }
-}
+
 .contact__left {
     width: 85.5%;
     max-width: 100%;

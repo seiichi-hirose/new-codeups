@@ -5,6 +5,24 @@
     position: relative;
     z-index: 3;
 }
+.price::before {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/common/top_contact_01-sp.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+        width: rem(340);
+        height: rem(162);
+        bottom: rem(55);
+        left: calc(50% - min(50%, rem(620)));
+    }
+    @include mq("lg") {
+        width: rem(437);
+        height: rem(201);
+    }
+}
 .price.top-price {
     padding-top: rem(80);
     padding-bottom: rem(80);
@@ -33,27 +51,9 @@
         justify-content: space-between;
         gap: rem(93);
         margin-top: rem(38);
-        position: relative;;
     }
 }
-.price__wrapper::before {
-    @include mq("md") {
-        position: absolute;
-        content: '';
-        background-image: url(../../assets/images/common/top_contact_01-sp.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: auto;
-        width: rem(340);
-        height: rem(162);
-        bottom: rem(-180);
-        left: rem(-80);
-    }
-    @include mq("lg") {
-        width: rem(437);
-        height: rem(201);
-    }
-}
+
 
 
 .price__figure {
