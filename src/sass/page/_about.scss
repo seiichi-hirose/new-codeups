@@ -2,7 +2,22 @@
 
 .about {
     @include mq("md") {
-
+        position: relative;
+    }
+}
+.about::after {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/images/common/top_illustration_01.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto;
+        width: rem(194);
+        height: rem(181);
+        bottom: rem(-91);
+        right: calc(50% - min(50%, rem(637)));
+        z-index: 22;
     }
 }
 .about.top-about {
@@ -23,25 +38,7 @@
     margin-top: rem(24);
     @include mq("md") {
         margin-top: rem(37);
-        position: relative;
-    }
-}
-.about__wrapper::after {
-    @include mq("md") {
-        position: absolute;
-        content: '';
-        background-image: url(../../assets/images/common/top_illustration_01.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: auto;
-        width: rem(194);
-        height: rem(181);
-        bottom: rem(-91);
-        right: rem(-40);
-        z-index: 22;
-    }
-    @include mq("ex") {
-        right: rem(-97);
+
     }
 }
 
