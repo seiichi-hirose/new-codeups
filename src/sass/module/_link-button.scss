@@ -16,6 +16,7 @@
 }
 
 .link-button::before {
+    background-color: $white;
     position: absolute;
     content: '';
     top: rem(4);
@@ -24,7 +25,7 @@
     height: rem(54);
     display: inline-block;
     border: rem(1) solid $skyblue;
-    z-index: 39;
+    z-index: -1;
 }
 
 .link-button::after {
