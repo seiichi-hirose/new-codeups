@@ -3,12 +3,14 @@
 .breadcrumb {
     display: flex;
     align-items: center;
+    padding-top: rem(8);
     @include mq("md") {
 
     }
 }
 .breadcrumb.not-found__breadcrumb {
     color: $white;
+    padding-top: 0;
 }
 
 .breadcrumb__link {
@@ -23,11 +25,11 @@
 
 .breadcrumb__arrow {
     display: inline-block;
-    border-right: rem(1) solid $white;
-    border-top: rem(1) solid $white;
-    height: rem(8);
+    border-right: rem(1) solid $black;
+    border-top: rem(1) solid $black;
+    height: rem(6);
     transform: rotate(45deg);
-    width: rem(8);
+    width: rem(6);
     margin-right: rem(10);
     @include mq("md") {
 
