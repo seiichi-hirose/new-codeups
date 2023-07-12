@@ -4,7 +4,7 @@
     background-color: $skyblue;
 
 }
-.footer.footer--layout {
+.footer.l-footer {
     margin-top: rem(100);
     padding-top: rem(46);
     padding-bottom: rem(56);
@@ -13,6 +13,9 @@
         padding-bottom: rem(80);
         margin-top: rem(160);
     }
+}
+.footer.l-footer.l-footer--404 {
+    margin-top: rem(-2);
 }
 .footer__inner {
 
