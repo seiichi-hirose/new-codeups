@@ -1,0 +1,48 @@
+@use "global" as *;
+
+
+.sitemap {
+    @include mq("md") {
+
+    }
+}
+.sitemap__article {
+    position: relative;
+}
+.sitemap__article::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/images/common/lower-top_image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    width: rem(120);
+    height: rem(55);
+    top: rem(56);
+    left: rem(15);
+    z-index: -1;
+    @include mq("md") {
+        background-image: none;
+    }
+}
+
+.sitemap__lower-fv {
+    background-image: url(../../assets/images/common/terms_fv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    @include mq("md") {
+        background-image: url(../../assets/images/common/terms_fv-pc.jpg);
+    }
+}
+
+.sitemap__wrapper {
+    margin-top: rem(12);
+    width: 100%;
+    @include mq("md") {
+        margin-top: rem(150);
+        margin-inline: auto;
+    }
+}

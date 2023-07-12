@@ -4,10 +4,16 @@
     display: flex;
     column-gap: rem(14);
     width: 100%;
-
     @include mq("md") {
-
         column-gap: rem(20);
+    }
+}
+.sitelist.sitemap__wrapper {
+    @include mq("md") {
+        column-gap: rem(50);
+    }
+    @include mq("xl") {
+        column-gap: rem(100);
     }
 }
 
@@ -22,6 +28,12 @@
 }
 .sitelist__nav.sitelist__nav--sitemap {
     color: $black;
+    @include mq("md") {
+        column-gap: rem(50);
+    }
+    @include mq("xl") {
+        column-gap: rem(100);
+    }
 }
 
 .sitelist__nav-left {
