@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    @include mq("md") {
+
+    }
+}
+.breadcrumb.not-found__breadcrumb {
+    color: $white;
+}
+
+.breadcrumb__link {
+    display: inline-block;
+    margin-right: rem(8);
+    font-size: rem(14);
+    font-weight: $normal;
+    @include mq("md") {
+
+    }
+}
+
+.breadcrumb__arrow {
+    display: inline-block;
+    border-right: rem(1) solid $white;
+    border-top: rem(1) solid $white;
+    height: rem(8);
+    transform: rotate(45deg);
+    width: rem(8);
+    margin-right: rem(10);
+    @include mq("md") {
+
+    }
+}
+
