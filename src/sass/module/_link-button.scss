@@ -14,6 +14,10 @@
     transition: ease .3s;
     border: rem(1) solid $skyblue;
 }
+.link-button.link-button--not-found {
+    background-color: $white;
+    border: rem(1) solid $white;
+}
 
 .link-button::before {
     background-color: $white;
@@ -26,6 +30,10 @@
     display: inline-block;
     border: rem(1) solid $skyblue;
     z-index: -1;
+}
+.link-button.link-button--not-found::before {
+    border: rem(1) solid $white;
+    background-color: $skyblue;
 }
 
 .link-button::after {
@@ -40,6 +48,9 @@
     transform-origin: left top;
     transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
     z-index: 40;
+}
+.link-button.link-button--not-found::after {
+    background-color: $skyblue;
 }
 
 .link-button:hover::after {
@@ -56,9 +67,16 @@
     color: $white;
     z-index: 44;
 }
+.link-button__text--not-found {
+    color: $skyblue;
+}
 .link-button:hover .link-button__text,
 .link-button:hover .link-button__arrow {
     color: $skyblue;
+}
+.link-button:hover .link-button__text--not-found,
+.link-button:hover .link-button__arrow--not-found {
+    color: $white;
 }
 
 
@@ -74,8 +92,15 @@
     transition: ease .3s;
     position: relative;
     }
-
+.link-button__arrow--not-found {
+    border-bottom: 1px solid $skyblue;
+    border-right: 1px solid $skyblue;
+}
 .link-button:hover .link-button__arrow {
 border-bottom: 1px solid $skyblue;
 border-right: 1px solid $skyblue;
+}
+.link-button:hover .link-button__arrow--not-found {
+border-bottom: 1px solid $white;
+border-right: 1px solid $white;
 }
