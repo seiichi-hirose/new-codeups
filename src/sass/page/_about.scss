@@ -58,7 +58,6 @@
     position: relative;
     width: 37.10%;
     aspect-ratio: 128 / 194;
-    object-fit: cover;
     margin-right: auto;
     z-index: 19;
     @include mq("md") {
@@ -78,6 +77,12 @@
         top: rem(85);
         width: 81.48%;
     }
+}
+.about__image2 img,
+.about__image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about__body {

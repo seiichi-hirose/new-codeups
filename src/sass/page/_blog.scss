@@ -49,13 +49,6 @@
 .blog__section-title {
     text-align: center;
 }
-.blog__sub-title,
-.blog__main-title::first-letter,
-.blog__main-title {
-    @include mq("md") {
-        color: $white;
-    }
-}
 
 .blog__cards {
     margin-top: rem(27);

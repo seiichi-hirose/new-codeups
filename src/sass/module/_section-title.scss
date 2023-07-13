@@ -20,9 +20,15 @@
         font-size: rem(80);
     }
 }
+.section-title__main--white {
+    color: $white;
+}
 
 .section-title__main::first-letter {
     color: $skyblue;
+}
+.section-title__main--white::first-letter {
+    color: $white;
 }
 
 .section-title__sub {
@@ -39,5 +45,8 @@
     @include mq("md") {
         margin-top: rem(-25);
     }
+}
+.section-title__sub--white {
+    color: $white;
 }
 

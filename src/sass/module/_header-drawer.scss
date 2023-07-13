@@ -36,10 +36,6 @@
     max-width: rem(102);
 }
 
-.header-drawer__image {
-    width: 100%;
-}
-
 .header-drawer__body {
     display: flex;
     column-gap: rem(14);
@@ -87,7 +83,7 @@
     left: rem(-21);
 }
 
-.header-drawer__nav-link {
+.header-drawer__nav-unit a {
     width: 100%;
     display: inline-block;
 }
