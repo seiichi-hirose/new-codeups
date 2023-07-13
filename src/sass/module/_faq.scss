@@ -1,0 +1,122 @@
+@use "global" as *;
+
+.faq {
+    @include mq("md") {
+
+    }
+}
+
+.faq__lower-fv {
+    background-image: url(../../assets/images/common/faq_fv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    @include mq("md") {
+        background-image: url(../../assets/images/common/faq_fv-pc.jpg);
+    }
+}
+
+.faq__article {
+    @include mq("md") {
+
+    }
+}
+
+.faq__inner {
+    @include mq("md") {
+
+    }
+}
+
+.faq__wrapper {
+    margin-top: rem(52);
+    width: 100%;
+    @include mq("md") {
+        margin-top: rem(150);
+        max-width: rem(700);
+        margin-inline: auto;
+    }
+}
+
+.faq__box + .faq__box {
+    margin-top: rem(40);
+    @include mq("md") {
+
+    }
+}
+
+
+.faq__question {
+    line-height: 1;
+    padding: rem(16);
+    background-color: $skyblue;
+    color: $white;
+    font-size: rem(16);
+    font-weight: $normal;
+    position: relative;
+    @include mq("md") {
+        cursor: pointer;
+        font-size: rem(20);
+        padding: rem(25) rem(40);
+    }
+}
+.faq__question:hover {
+    @include mq("md") {
+        opacity: 0.6;
+    }
+}
+/* 縦線 */
+.faq__question::before {
+    background-color: $white; /* 線の色 */
+    content: "";
+    height: rem(1); /* 線の太さ */
+    display: inline-block;
+    position: absolute;
+    right: rem(16);
+    top: 50%; /* 線の位置を縦中央に */
+    transform: rotate(90deg); /* 線を縦に */
+    transition: transform .3s ease-in-out;
+    width: rem(28); /* 線の幅 */
+    @include mq("md") {
+        width: rem(32);
+        right: rem(40);
+    }
+}
+.faq__question::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: rem(28);
+    height: rem(1);
+    background-color: $white;
+    right: rem(16);
+    top: 50%;
+    @include mq("md") {
+        width: rem(32);
+        right: rem(40);
+    }
+}
+/* 縦線(クリック後) */
+.faq__question.open::before {
+    transform: rotate(180deg);
+  }
+  /* 横線(クリック後) */
+  .faq__question.open::after {
+    opacity: 0;
+  }
+
+.faq__answer {
+    padding: rem(24) rem(16);
+    font-weight: $normal;
+    font-size: rem(16);
+    border: rem(1) solid $skyblue;
+    display: none;
+    @include mq("md") {
+        padding: rem(40);
+        margin-top: rem(16);
+    }
+}
+
+
