@@ -86,7 +86,7 @@ const swiper1 = new Swiper(".js-top-fv", {
     },
 });
 
-const swiper2 = new Swiper(".js-top-campaign", {
+const swiper2 = new Swiper(".js-campaign", {
     loop: true, // デフォルトはfalse
     // centeredSlides: true,
     autoplay: true, // 自動再生
