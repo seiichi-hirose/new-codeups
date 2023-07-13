@@ -39,13 +39,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 //要素の取得とスピードの設定
-var box = $('.colorbox'),
+var box = $('.js-colorbox'),
     speed = 700;
 
-//.colorboxの付いた全ての要素に対して下記の処理を行う
+//.js-colorboxの付いた全ての要素に対して下記の処理を行う
 box.each(function(){
-$(this).append('<div class="image-color"></div>')
-var color = $(this).find($('.image-color')),
+$(this).append('<div class="colorbox-color"></div>')
+var color = $(this).find($('.colorbox-color')),
 image = $(this).find('img');
 var counter = 0;
 

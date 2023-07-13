@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.colorbox {
+.js-colorbox {
     position: relative;
 }
 
-.colorbox .image-color {
+.js-colorbox .colorbox-color {
     position: absolute;
     top: 0;
     right: 0;
