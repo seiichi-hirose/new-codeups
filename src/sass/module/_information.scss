@@ -5,16 +5,6 @@
     position: relative;
     z-index: 2;
 }
-.information.top-information {
-    margin-top: rem(83);
-    padding-top: rem(80);
-    padding-bottom: rem(80);
-    @include mq("md") {
-        margin-top: rem(140);
-        padding-top: rem(89);
-        padding-bottom: rem(100);
-    }
-}
 
 .inner.information__inner {
     max-width: rem(600);

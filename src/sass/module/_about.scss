@@ -20,12 +20,6 @@
         z-index: 22;
     }
 }
-.about.top-about {
-    margin-top: rem(82);
-    @include mq("md") {
-        margin-top: rem(130);
-    }
-}
 
 .inner.about__inner {
     max-width: rem(600);

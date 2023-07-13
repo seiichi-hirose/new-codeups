@@ -4,12 +4,6 @@
     width: 100%;
     // overflow-x: hidden;
 }
-.campaign.top-campaign {
-    margin-top: rem(40);
-    @include mq("md") {
-        margin-top: rem(111);
-    }
-}
 
 .inner.campaign__inner {
     width: auto;
