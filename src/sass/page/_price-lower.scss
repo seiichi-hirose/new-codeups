@@ -1,0 +1,126 @@
+@use "global" as *;
+
+.price-lower {
+    @include mq("md") {
+
+    }
+}
+
+.price-lower__lower-fv {
+    background-image: url(../../assets/images/common/price_fv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    @include mq("md") {
+        background-image: url(../../assets/images/common/price_fv-pc.jpg);
+    }
+}
+
+.price-lower__article {
+
+}
+
+.price-lower__inner {
+    @include mq("md") {
+
+    }
+}
+
+.price-lower__breadcrumb {
+    @include mq("md") {
+
+    }
+}
+
+.price-lower__wrapper {
+    margin-top: rem(52);
+    width: 100%;
+    text-align: center;
+    @include mq("md") {
+        margin-top: rem(150);
+        max-width: rem(800);
+        margin-inline: auto;
+    }
+}
+
+.price-lower__table + .price-lower__table {
+    margin-top: rem(40);
+    @include mq("md") {
+
+    }
+}
+.price-lower__top {
+    background-color: $skyblue;
+    color: $white;
+    padding: rem(8) 0;
+    @include mq("md") {
+
+    }
+}
+.price-lower__title {
+    display: inline-block;
+    font-weight: $bold;
+    font-size: rem(16);
+    padding-left: rem(12);
+    position: relative;
+    @include mq("md") {
+
+    }
+}
+.price-lower__title::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../assets/images/common/price_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    width: rem(24);
+    height: rem(24);
+    top: 0;
+    left: rem(-17);
+}
+
+.price-lower__body {
+    border: rem(1) solid $skyblue;
+    border-top: none;
+    @include mq("md") {
+
+    }
+}
+
+.price-lower__line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: rem(1) solid $skyblue;
+    height: rem(64);
+    @include mq("md") {
+
+    }
+}
+
+.price-lower__course {
+    width: 69.57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    border-right: rem(1) solid $skyblue;
+    @include mq("md") {
+
+    }
+}
+
+.price-lower__value {
+    width: 30.43%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq("md") {
+
+    }
+}
+
