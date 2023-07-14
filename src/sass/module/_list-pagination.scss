@@ -1,0 +1,88 @@
+@use "global" as *;
+
+
+.list-pagination {
+    @include mq("md") {
+
+    }
+}
+
+.list-pagination__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq("md") {
+
+    }
+}
+
+.list-pagination__item {
+    width: 100%;
+    max-width: rem(38);
+    height: rem(38);
+    border: rem(1) solid $skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $skyblue;
+    transition: all .3s;
+    @include mq("md") {
+        cursor: pointer;
+    }
+}
+.list-pagination__item:hover {
+    @include mq("md") {
+        opacity: 0.6;
+    }
+}
+
+.list-pagination__prev {
+    margin-right: rem(40);
+    @include mq("md") {
+
+    }
+}
+.list-pagination__prev a {
+    display: inline-block;
+    border-left: rem(1) solid $skyblue;
+    border-top: rem(1) solid $skyblue;
+    height: rem(12);
+    transform: rotate(-45deg);
+    width: rem(12);
+    margin-left: rem(5);
+    @include mq("md") {
+
+    }
+}
+
+.list-pagination__number + .list-pagination__number {
+    margin-left: rem(12);
+    @include mq("md") {
+
+    }
+}
+
+.list-pagination__number--active {
+    background-color: $skyblue;
+    color: $white;
+    @include mq("md") {
+
+    }
+}
+
+.list-pagination__next {
+    margin-left: rem(40);
+    @include mq("md") {
+
+    }
+}
+.list-pagination__next a {
+    display: inline-block;
+    border-right: rem(1) solid $skyblue;
+    border-top: rem(1) solid $skyblue;
+    height: rem(12);
+    transform: rotate(45deg);
+    width: rem(12);
+    margin-right: rem(5);
+}
+
