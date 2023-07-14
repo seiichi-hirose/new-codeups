@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.campaign-lower {
+
+}
+
+.campaign-lower__lower-fv {
+    background-image: url(../../assets/images/common/campaign_fv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include mq("md") {
+        background-image: url(../../assets/images/common/campaign_fv-pc.jpg);
+    }
+}
+
+.campaign-lower__article {
+
+}
+
+.campaign-lower__inner {
+
+}
+
+.campaign-lower__breadcrumb {
+
+}
+
+.campaign-lower__wrapper {
+    margin-top: rem(52);
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.campaign-lower__categories {
+    @include mq("md") {
+
+    }
+}
+.campaign-lower__cards {
+    margin-top: rem(40);
+    @include mq("md") {
+    }
+}
+
+
+.campaign-lower__pagination {
+    margin-top: rem(80);
+    @include mq("md") {
+    }
+}

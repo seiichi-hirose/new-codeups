@@ -1,0 +1,21 @@
+@use "global" as *;
+
+
+.campaign-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(40) rem(20);
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem(80) rem(40);
+    }
+}
+.campaign-cards__item {
+    width: 100%;
+    max-width: rem(280);
+    margin-inline: auto;
+    @include mq("md") {
+        max-width:rem(520) ;
+    }
+}
