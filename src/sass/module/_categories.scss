@@ -1,0 +1,48 @@
+@use "global" as *;
+
+
+
+.categories {
+    @include mq("md") {
+
+    }
+}
+
+.categories__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(16) rem(21);
+    @include mq("md") {
+
+    }
+}
+
+.categories__item {
+    font-size: rem(14);
+    font-weight: $normal;
+    color: $skyblue;
+    background-color: $white;
+    border: rem(1) solid $skyblue;
+    width: 100%;
+    max-width: rem(162);
+    text-align: center;
+    padding: rem(6) 0;
+    transition: all .3s;
+    @include mq("md") {
+        cursor: pointer;
+    }
+}
+.categories__item:hover {
+    @include mq("md") {
+        opacity: 0.6;
+    }
+}
+.categories__item a {
+    display: inline-block;
+    width: 100%;
+}
+.categories__item--active {
+    background-color: $skyblue;
+    color: $white;
+}
+
