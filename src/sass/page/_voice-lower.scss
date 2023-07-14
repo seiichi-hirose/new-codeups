@@ -1,0 +1,57 @@
+@use "global" as *;
+
+
+
+.voice-lower {
+
+}
+
+.voice-lower__lower-fv {
+    background-image: url(../../assets/images/common/voice_fv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include mq("md") {
+        background-image: url(../../assets/images/common/voice_fv-pc.jpg);
+    }
+}
+
+.voice-lower__article {
+
+}
+
+.voice-lower__inner {
+
+}
+
+.voice-lower__breadcrumb {
+
+}
+
+.voice-lower__wrapper {
+    margin-top: rem(52);
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.voice-lower__categories {
+    @include mq("md") {
+
+    }
+}
+
+.voice-lower__cards {
+    margin-top: rem(40);
+    @include mq("md") {
+
+    }
+}
+
+.voice-lower__pagination {
+    margin-top: rem(80);
+    @include mq("md") {
+        margin-top: rem(72);
+    }
+}
+
