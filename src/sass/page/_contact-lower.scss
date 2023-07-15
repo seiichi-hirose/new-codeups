@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.contact-lower {
+    @include mq("md") {
+
+    }
+}
+
+.contact-lower__lower-fv {
+    background-image: url(../../assets/images/common/contact_fv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include mq("md") {
+        background-image: url(../../assets/images/common/contact_fv-pc.jpg);
+    }
+}
+
+.contact-lower__wrapper {
+    margin-top: rem(52);
+    width: 100%;
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+.contact-lower__thanks {
+    text-align: center;
+}
+.contact-lower__thanks:last-child {
+    margin-top: rem(40);
+}
