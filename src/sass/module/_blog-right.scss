@@ -1,0 +1,134 @@
+@use "global" as *;
+
+
+.blog-right {
+    width: 100%;
+    max-width: rem(600);
+    margin-inline: auto;
+    @include mq("md") {
+        max-width: rem(294);
+    }
+
+}
+
+.blog-right__box + .blog-right__box{
+    margin-top: rem(80);
+}
+
+.blog-right__title {
+    font-weight: $normal;
+    font-size: rem(24);
+    padding: rem(8) 0 rem(8) rem(74);
+    border-left: rem(8) solid $skyblue;
+    position: relative;
+}
+.blog-right__title::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url(../../assets/images/common/blog_icon-04.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: rem(50);
+    height: rem(50);
+    top: 0;
+    left: rem(10);
+}
+
+.blog-right__blog-items {
+    margin-top: rem(24);
+}
+
+.blog-right__blog-item + .blog-right__blog-item {
+    margin-top: rem(24);
+}
+
+.blog-right__voice-item {
+    margin-top: rem(24);
+}
+
+.blog-right__voice-img {
+    width: 100%;
+    aspect-ratio: 294 / 218;
+}
+.blog-right__voice-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-right__voice-name {
+    display: inline-block;
+    font-size: rem(12);
+    font-weight: $normal;
+    margin-top: rem(16);
+}
+
+.blog-right__voice-title {
+    font-size: rem(24);
+    font-weight: $medium;
+    margin-top: rem(8);
+}
+
+.blog-right__button-layout {
+    margin-top: rem(40);
+    text-align: center;
+}
+
+.blog-right__campaign-items{
+    margin-top: rem(24);
+}
+.blog-right__campaign-item + .blog-right__campaign-item{
+    margin-top: rem(40);
+}
+
+.blog-right__archive-items {
+    color: $skyblue;
+    margin-top: rem(24);
+    font-size: rem(24);
+    font-weight: $normal;
+}
+
+.blog-right__archive-item {
+
+}
+
+.blog-right__archive-year {
+    padding-left: rem(32);
+    position: relative;
+}
+.blog-right__archive-year::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10.5px 0 10.5px 18px;
+    border-color: transparent transparent transparent $skyblue;
+    top: rem(9);
+    left: 0;
+}
+
+.blog-right__archive-months {
+    padding-left: rem(56);
+}
+
+.blog-right__archive-months a {
+    display: block;
+    position: relative;
+}
+.blog-right__archive-months a::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10.5px 0 10.5px 18px;
+    border-color: transparent transparent transparent $skyblue;
+    top: rem(9);
+    left: rem(-27);
+}
+

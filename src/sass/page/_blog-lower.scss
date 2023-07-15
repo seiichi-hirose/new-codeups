@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.blog-lower {
+    @include mq("md") {
+
+    }
+}
+
+.blog-lower__lower-fv {
+    background-image: url(../../assets/images/common/blog_fv-sp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include mq("md") {
+        background-image: url(../../assets/images/common/blog_fv-pc.jpg);
+    }
+}
+
+.blog-lower__article {
+    @include mq("md") {
+    }
+}
+
+.blog-lower__inner {
+    @include mq("md") {
+
+    }
+}
+
+.blog-lower__breadcrumb {
+    @include mq("md") {
+
+    }
+}
+
+.blog-lower__wrapper {
+    margin-top: rem(52);
+    @include mq("md") {
+        margin-top: rem(150);
+        display: flex;
+        gap: rem(80);
+    }
+}
+
+
+.blog-lower__left {
+    padding: 0 rem(5);
+    @include mq("md") {
+        padding: 0;
+    }
+}
+.blog-lower__cards {
+    @include mq("md") {
+
+    }
+}
+.blog-lower__right {
+    padding: 0 rem(25);
+    @include mq("md") {
+        padding: 0;
+    }
+}
+.blog-lower__pagination {
+    margin-top: rem(80);
+    @include mq("md") {
+
+    }
+}
+.blog-lower__right {
+    margin-top: rem(80);
+    @include mq("md") {
+        margin-top: 0;
+    }
+}
