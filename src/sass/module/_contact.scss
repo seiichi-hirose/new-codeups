@@ -4,7 +4,7 @@
     text-align: center;
     position: relative;
 }
-.contact__wrapper::after {
+.contact::after {
     position: absolute;
     content: '';
     background-image: url(../../assets/images/common/top_contact_01-sp.png);
