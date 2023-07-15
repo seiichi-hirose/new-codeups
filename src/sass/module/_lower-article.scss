@@ -14,7 +14,6 @@
     height: rem(55);
     top: rem(56);
     left: rem(15);
-    z-index: -1;
     @include mq("md") {
         width: rem(301);
         height: rem(138);
