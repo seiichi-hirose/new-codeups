@@ -73,7 +73,18 @@ color.on('inview', function(){
     $(this).toggleClass("open", 300);
   });
 
+
+  // アコーディオン(ブログ)
+  $(".blog-right__archive-item:first-of-type .blog-right__archive-months").css("display", "block");
+  $(".blog-right__archive-item:first-of-type .js-blog-right__archive-year").addClass("open");
+  $(".js-blog-right__archive-year").on("click", function () {
+    $(this).next().slideToggle(300);
+    $(this).toggleClass("open", 300);
+  });
+
 });
+
+
 
 
 const swiper1 = new Swiper(".js-top-fv", {
