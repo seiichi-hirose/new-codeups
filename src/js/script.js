@@ -82,6 +82,16 @@ color.on('inview', function(){
     $(this).toggleClass("open", 300);
   });
 
+  // タブメニュー
+    $(".js-information-lower__frame:first-of-type").css("display", "block");
+    $(".js-information-lower__category-item").on("click", function () {
+      $(".current").removeClass("current");
+      $(this).addClass("current");
+      const index = $(this).index();
+      $(".js-information-lower__frame").hide().eq(index).fadeIn(300);
+    });
+
+
 });
 
 

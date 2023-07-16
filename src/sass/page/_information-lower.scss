@@ -41,12 +41,88 @@
     }
 }
 
-.information-lower__categories {
+.information-lower__category {
+    position: relative;
     @include mq("md") {
 
     }
 }
 
+.information-lower__category-items {
+    display: flex;
+    align-items: center;
+    // gap: rem(20);
+    @include mq("md") {
+        justify-content: space-between;
+    }
+}
+
+.information-lower__category-item {
+    text-align: center;
+    background-color: $lightblue;
+    color: $skyblue;
+    width: 100%;
+    max-width: rem(102);
+    height: rem(60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
+    transition: all .3s;
+    @include mq("md") {
+        cursor: pointer;
+        max-width: rem(300);
+        height: rem(90);
+        position: relative;
+    }
+}
+.information-lower__category-item::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        background-image: url(../../assets/images/common/info_icon01-b.png);
+        background-position: center;
+        background-size: contain;
+        width: rem(64);
+        height: rem(64);
+        top: rem(10);
+        left: rem(15);
+    }
+}
+.information-lower__category-item:hover {
+    @include mq("md") {
+        opacity: 0.6;
+    }
+}
+.information-lower__category-item img {
+    display: none;
+    width: rem(64);
+    height: rem(64);
+    @include mq("md") {
+        display: inline-block;
+    }
+}
+.information-lower__category-item a {
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: $normal;
+    @include mq("md") {
+        font-size: rem(24);
+        margin-left: rem(65);
+    }
+}
+.information-lower__category-item.current {
+    @include mq("md") {
+        background-color: $skyblue;
+        color: $white;
+    }
+}
+.information-lower__category-item.current::before {
+    background-image: url(../../assets/images/common/info_icon01-w.png);
+}
+.information-lower__frame {
+    display: none;
+}
 .information-lower__box {
     width: 100%;
     margin-top: rem(16);
@@ -59,6 +135,7 @@
         gap: rem(48);
     }
 }
+
 
 .information-lower__box-left {
     @include mq("md") {
