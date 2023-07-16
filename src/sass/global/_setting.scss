@@ -45,6 +45,12 @@ body {
   color: $black;
 }
 
+.fixed {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
 html.is-fixed {
   overflow: hidden;
 }
