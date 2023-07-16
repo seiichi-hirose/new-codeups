@@ -91,6 +91,18 @@ color.on('inview', function(){
       $(".js-information-lower__frame").hide().eq(index).fadeIn(300);
     });
 
+    //モーダル
+    $(".js-gallery__image img").click(function() {
+        $("#gallery__modal-window").html($(this).prop('outerHTML'));
+        $("#gallery__modal-window").fadeIn(100);
+        $(".header").fadeOut();
+        $(".js-to-top").fadeOut();
+      });
+      $("#gallery__modal-window, #gallery__modal-window img").click(function() {
+        $("#gallery__modal-window").fadeOut(100);
+        $(".header").fadeIn();
+        $(".js-to-top").fadeIn();
+      });
 
 });
 
