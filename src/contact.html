@@ -170,9 +170,15 @@
                 <dl class="contact-form__flex">
                     <dt class="contact-form__title">お問合せ項目<span class="contact-form__danger-label">必須</span></dt>
                     <dd class="contact-form__blank">
-                        <label class="contact-form__label"><input type="checkbox" name="checkbox-name" checked><span>ダイビング講習について</span></label>
-                        <label class="contact-form__label"><input type="checkbox" name="checkbox-name"><span>ファンダイビングについて</span></label>
-                        <label class="contact-form__label"><input type="checkbox" name="checkbox-name"><span>体験ダイビングについて</span></label>
+                      <div class="contact-form__checkbox">
+                        <input type="checkbox" name="checkbox-name" id="diving" checked><label for="diving" class="contact-form__label"><span>ダイビング講習について</span></label>
+                      </div>
+                      <div class="contact-form__checkbox">
+                        <input type="checkbox" name="checkbox-name" id="fan"><label for="fan" class="contact-form__label"><span>ファンダイビングについて</span></label>
+                      </div>
+                      <div class="contact-form__checkbox">
+                        <input type="checkbox" name="checkbox-name" id="taiken"><label for="taiken" class="contact-form__label"><span>体験ダイビングについて</span></label>
+                      </div>
                     </dd>
                 </dl>
             </li><!-- /アイテム 性別 -->
@@ -206,7 +212,9 @@
 
         <!-- プライバシーポリシー同意 -->
         <div class="contact-form__privacy">
-            <label class="contact-form__label contact-form__label--policy"><input class="contact-form__checkbox" type="checkbox" name="check-name"><span>個人情報の取り扱いについて同意のうえ送信します。</span></label>
+          <div class="contact-form__checkbox">
+            <input type="checkbox" name="check-name" id="policy"><label for="policy" class="contact-form__label"><span>個人情報の取り扱いについて同意のうえ送信します。</span></label>
+          </div>
         </div><!-- /プライバシーポリシー同意 -->
         
         <!-- ボタン -->

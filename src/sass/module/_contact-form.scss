@@ -80,14 +80,17 @@ input[type=text]::placeholder {
     color: $lightblue;
 }
 
-.contact-form__label {
+.contact-form__checkbox {
     display: block;
+}
+.contact-form__label {
+    display: inline-block;
     position: relative;
     @include mq("md") {
 
     }
 }
-.contact-form__label + .contact-form__label {
+.contact-form__checkbox + .contact-form__checkbox {
     @include mq("md") {
         margin-top: rem(4);
     }
@@ -120,7 +123,7 @@ input[type=checkbox] {
     position: absolute;
     content: "";
 	display: block;
-    left: rem(4);
+    left: rem(-10);
 	top: rem(5);
 	width: rem(6);
 	height: rem(10);
@@ -129,20 +132,16 @@ input[type=checkbox] {
 	transform: rotate(45deg);
     opacity: 0;
     @include mq("md") {
-        left: rem(8);
+        left: rem(-12);
         top: rem(5);
         height: rem(13);
     }
 }
-.contact-form__label--policy::after {
-    left: rem(58);
-    @include mq("md") {
-        left: rem(142);
-    }
-}
+
 input[type=checkbox]:checked + .contact-form__label::after {
 	opacity: 1;
 }
+
 .contact-form__blank {
     margin-top: rem(16);
     @include mq("md") {
