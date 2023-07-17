@@ -17,6 +17,7 @@
 }
 
 .terms__wrapper {
+    position: relative;
     margin-top: rem(52);
     width: 100%;
     @include mq("md") {

@@ -6,25 +6,25 @@
 
     }
 }
-.sitemap__article {
-    position: relative;
-}
-.sitemap__article::before {
-    position: absolute;
-    content: "";
-    background-image: url(../../assets/images/common/lower-top_image.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: auto;
-    width: rem(120);
-    height: rem(55);
-    top: rem(56);
-    left: rem(15);
-    z-index: -1;
-    @include mq("md") {
-        background-image: none;
-    }
-}
+// .sitemap__article {
+//     position: relative;
+// }
+// .sitemap__article::before {
+//     position: absolute;
+//     content: "";
+//     background-image: url(../../assets/images/common/lower-top_image.png);
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     margin: auto;
+//     width: rem(120);
+//     height: rem(55);
+//     top: rem(56);
+//     left: rem(15);
+//     z-index: -1;
+//     @include mq("md") {
+//         background-image: none;
+//     }
+// }
 
 .sitemap__lower-fv {
     background-image: url(../../assets/images/common/terms_fv-sp.jpg);
