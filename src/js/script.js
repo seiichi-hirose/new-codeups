@@ -1,6 +1,20 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
+
+//ローディングアニメーション
+const spHeight = window.innerHeight;
+document.documentElement.style.setProperty("--vh", spHeight / 100 + "px");
+$(window).on("load", function () {
+    $(".js-loading-animation").fadeIn();
+    $(".js-loading-animation__center").delay(500).fadeOut(1500); // 背景色をフェードアウト
+});
+// setTimeout(stoploading, 3000);
+// function stoploading() {
+//   $(".js-loading-animation").fadeOut(1200);
+// }
+
+
 //トップに戻るボタン スクロール検知
     $(window).on("scroll", function () {
     // トップから100px以上スクロールしたら
