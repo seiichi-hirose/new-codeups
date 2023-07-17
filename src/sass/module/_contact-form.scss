@@ -75,9 +75,16 @@
         margin-top: 0;
     }
 }
+.contact-form__input--error {
+    border: rem(1) solid $red;
+    background-color: rgb(201,72,0,0.2);
+}
 input[type=text]::placeholder {
     font-size: rem(16);
     color: $lightblue;
+}
+input.contact-form__input--error::placeholder {
+    color: $white;
 }
 
 .contact-form__checkbox {

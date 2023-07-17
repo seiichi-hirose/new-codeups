@@ -23,6 +23,29 @@
         margin-top: rem(150);
     }
 }
+.contact-lower__error {
+    position: relative;
+    width: 100%;
+    max-width: rem(260);
+    margin-inline: auto;
+    color: $red;
+    padding-bottom: rem(40);
+    display: none;
+    @include mq("md") {
+        max-width: 100%;
+    }
+}
+.contact-lower__error.error {
+    display: block;
+}
+.contact-lower__error-text {
+    text-align: left;
+    padding-left:1em;
+	text-indent:-1em;
+    @include mq("md") {
+        text-align: center;
+    }
+}
 .contact-lower__thanks {
     text-align: center;
 }
