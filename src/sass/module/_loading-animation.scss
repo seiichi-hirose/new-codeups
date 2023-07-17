@@ -1,5 +1,18 @@
 @use "global" as *;
 
+
+.loading-animation-main {
+    opacity: 1;
+    visibility: visible;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
 .loading-animation {
     left: 0;
     position: fixed;
@@ -10,6 +23,13 @@
     z-index: 9996;
     height: calc( var(--vh) * 100 );
     display: none;
+}
+.loading-animation.is-active {
+    display: block;
+}
+.loading-animation-main.is-active {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .loading-animation__image {
