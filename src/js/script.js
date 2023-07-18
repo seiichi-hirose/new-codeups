@@ -62,6 +62,11 @@ webStorage();
     }
     });
 
+    $(".header-drawer__nav-unit").on("click", function () {
+      $(".js-header-drawer").fadeOut();
+      $("html").removeClass("is-fixed");
+      $(".js-hamburger").removeClass("active");
+    });
 
 
 //要素の取得とスピードの設定
