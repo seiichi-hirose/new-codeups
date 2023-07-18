@@ -3,29 +3,29 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
 //ローディングアニメーション
-const spHeight = window.innerHeight;
-document.documentElement.style.setProperty("--vh", spHeight / 100 + "px");
+// const spHeight = window.innerHeight;
+// document.documentElement.style.setProperty("--vh", spHeight / 100 + "px");
 
-var webStorage = function () {
-    if (sessionStorage.getItem('access')) {
-      /*
-        2回目以降アクセス時の処理
-      */
-      $(".loading-animation-main").addClass('is-active');
-    } else {
-$(window).on("load", function () {
-    sessionStorage.setItem('access', 'true'); // sessionStorageにデータを保存
-    $(".js-loading-animation").addClass('is-active');
-    $(".js-loading-animation__center").delay(500).fadeOut(1500); // 背景色をフェードアウト
-});
-setTimeout(stoploading, 3000);
-function stoploading() {
-$(".loading-animation-main").addClass('is-active');
-  $(".js-loading-animation").fadeOut(600);
-}
-}
-}
-webStorage();
+// var webStorage = function () {
+//     if (sessionStorage.getItem('access')) {
+//       /*
+//         2回目以降アクセス時の処理
+//       */
+//       $(".loading-animation-main").addClass('is-active');
+//     } else {
+// $(window).on("load", function () {
+//     sessionStorage.setItem('access', 'true'); // sessionStorageにデータを保存
+//     $(".js-loading-animation").addClass('is-active');
+//     $(".js-loading-animation__center").delay(500).fadeOut(1500); // 背景色をフェードアウト
+// });
+// setTimeout(stoploading, 3000);
+// function stoploading() {
+// $(".loading-animation-main").addClass('is-active');
+//   $(".js-loading-animation").fadeOut(600);
+// }
+// }
+// }
+// webStorage();
 
 //トップに戻るボタン スクロール検知
     $(window).on("scroll", function () {
