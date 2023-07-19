@@ -7,12 +7,6 @@
     position: relative;
     z-index: 1;
 }
-.not-found.l-not-found {
-    padding-top: rem(88);
-    @include mq("md") {
-        padding-top: rem(119);
-    }
-}
 
 .inner.not-found__inner {
 }

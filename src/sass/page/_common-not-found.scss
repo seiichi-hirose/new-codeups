@@ -1,0 +1,9 @@
+@use "global" as *;
+
+
+.common-not-found {
+    padding-top: rem(88);
+    @include mq("md") {
+        padding-top: rem(119);
+    }
+}
