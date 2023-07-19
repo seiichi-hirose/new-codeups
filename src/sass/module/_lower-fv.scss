@@ -2,10 +2,11 @@
 
 .lower-fv {
     width: 100%;
-    height: 100vh;
+    height: rem(460);
     text-align: center;
+    position: relative;
     @include mq("md") {
-
+        height: rem(548);
     }
 }
 
@@ -17,7 +18,8 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     @include mq("md") {
-
+        -webkit-transform: translate(-50%, -10%);
+        transform: translate(-50%, -10%);
     }
 }
 
