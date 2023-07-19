@@ -212,7 +212,7 @@ input[type=checkbox]:checked + .contact-form__label::after {
         margin-top: rem(40);
     }
 }
-.contact-lower__form {
+.page-contact__form {
     position: relative;
     @include mq("md") {
 

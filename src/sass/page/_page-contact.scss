@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.contact-lower {
+.page-contact {
     @include mq("md") {
 
     }
 }
 
-.contact-lower__lower-fv {
+.page-contact__lower-fv {
     background-image: url(../../assets/images/common/contact_fv-sp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,14 +16,14 @@
     }
 }
 
-.contact-lower__wrapper {
+.page-contact__wrapper {
     margin-top: rem(52);
     width: 100%;
     @include mq("md") {
         margin-top: rem(150);
     }
 }
-.contact-lower__error {
+.page-contact__error {
     position: relative;
     width: 100%;
     max-width: rem(260);
@@ -35,10 +35,10 @@
         max-width: 100%;
     }
 }
-.contact-lower__error.error {
+.page-contact__error.error {
     display: block;
 }
-.contact-lower__error-text {
+.page-contact__error-text {
     text-align: left;
     padding-left:1em;
 	text-indent:-1em;
@@ -46,9 +46,9 @@
         text-align: center;
     }
 }
-.contact-lower__thanks {
+.page-contact__thanks {
     text-align: center;
 }
-.contact-lower__thanks:last-child {
+.page-contact__thanks:last-child {
     margin-top: rem(40);
 }
