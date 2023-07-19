@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.campaign-lower {
+.page-campaign {
 
 }
 
-.campaign-lower__lower-fv {
+.page-campaign__lower-fv {
     background-image: url(../../assets/images/common/campaign_fv-sp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,38 +14,38 @@
     }
 }
 
-.campaign-lower__article {
+.page-campaign__article {
 
 }
 
-.campaign-lower__inner {
+.page-campaign__inner {
 
 }
 
-.campaign-lower__breadcrumb {
+.page-campaign__breadcrumb {
 
 }
 
-.campaign-lower__wrapper {
+.page-campaign__wrapper {
     margin-top: rem(52);
     @include mq("md") {
         margin-top: rem(150);
     }
 }
 
-.campaign-lower__categories {
+.page-campaign__categories {
     @include mq("md") {
 
     }
 }
-.campaign-lower__cards {
+.page-campaign__cards {
     margin-top: rem(40);
     @include mq("md") {
     }
 }
 
 
-.campaign-lower__pagination {
+.page-campaign__pagination {
     margin-top: rem(80);
     @include mq("md") {
     }
