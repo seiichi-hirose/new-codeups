@@ -52,3 +52,10 @@
 .page-contact__thanks:last-child {
     margin-top: rem(40);
 }
+
+.page-contact__form {
+    position: relative;
+    @include mq("md") {
+
+    }
+}
