@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.about-lower {
+.page-about {
     @include mq("md") {
 
     }
 }
 
-.about-lower__lower-fv {
+.page-about__lower-fv {
     background-image: url(../../assets/images/common/about_fv-sp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,12 +16,12 @@
     }
 }
 
-.about-lower__article {
+.page-about__article {
     @include mq("md") {
         position: relative;
     }
 }
-.about-lower__article::after {
+.page-about__article::after {
     @include mq("md") {
         position: absolute;
         content: '';
@@ -36,20 +36,20 @@
     }
 }
 
-.about-lower__inner {
+.page-about__inner {
     max-width: rem(600);
     @include mq("md") {
 
     }
 }
 
-.about-lower__breadcrumb {
+.page-about__breadcrumb {
     @include mq("md") {
 
     }
 }
 
-.about-lower__wrapper {
+.page-about__wrapper {
     margin-top: rem(52);
     @include mq("md") {
         margin-top: rem(150);
@@ -59,12 +59,12 @@
         position: relative;
     }
 }
-.about-lower__figure {
+.page-about__figure {
     @include mq("md") {
         position: relative;
     }
 }
-.about-lower__image2 {
+.page-about__image2 {
     @include mq("md") {
         position: relative;
         aspect-ratio: 128 / 194;
@@ -73,7 +73,7 @@
         width: 36.94%;
     }
 }
-.about-lower__image1 {
+.page-about__image1 {
     @include mq("md") {
         position: absolute;
         right: 0;
@@ -85,14 +85,14 @@
         z-index: 12;
     }
 }
-.about-lower__image2 img,
-.about-lower__image1 img {
+.page-about__image2 img,
+.page-about__image1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.about-lower__center {
+.page-about__center {
     @include mq("md") {
         width: 82.78%;
         display: flex;
@@ -106,7 +106,7 @@
     }
 }
 
-.about-lower__title {
+.page-about__title {
     font-family: $second-font-family, sans-serif;
     color: $white;
     font-weight: $normal;
@@ -127,7 +127,7 @@
     }
 }
 
-.about-lower__right {
+.page-about__right {
     margin-top: rem(40);
     @include mq("md") {
         max-width: rem(400);
@@ -136,7 +136,7 @@
     }
 }
 
-.about-lower__copy {
+.page-about__copy {
     font-size: rem(16);
     font-weight: $normal;
     line-height: 1.5;
@@ -145,7 +145,7 @@
     }
 }
 
-.about-lower__gallery {
+.page-about__gallery {
     margin-top: rem(40);
     @include mq("md") {
         margin-top: rem(180);
