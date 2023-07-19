@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.l-footer {
+.common-footer {
     margin-top: rem(100);
     padding-top: rem(46);
     padding-bottom: rem(56);
@@ -11,6 +11,6 @@
     }
 }
 
-.l-footer.l-footer--404 {
+.common-footer.common-footer--404 {
     margin-top: rem(-2);
 }
