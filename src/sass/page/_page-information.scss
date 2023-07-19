@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.information-lower {
+.page-information {
     @include mq("md") {
 
     }
 }
 
-.information-lower__lower-fv {
+.page-information__lower-fv {
     background-image: url(../../assets/images/common/information_fv-sp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,39 +16,39 @@
     }
 }
 
-.information-lower__article {
+.page-information__article {
     @include mq("md") {
 
     }
 }
 
-.information-lower__inner {
+.page-information__inner {
     @include mq("md") {
 
     }
 }
 
-.information-lower__breadcrumb {
+.page-information__breadcrumb {
     @include mq("md") {
 
     }
 }
 
-.information-lower__wrapper {
+.page-information__wrapper {
     margin-top: rem(120);
     @include mq("md") {
         margin-top: rem(150);
     }
 }
 
-.information-lower__category {
+.page-information__category {
     position: relative;
     @include mq("md") {
 
     }
 }
 
-.information-lower__category-items {
+.page-information__category-items {
     display: flex;
     align-items: center;
     // gap: rem(20);
@@ -57,7 +57,7 @@
     }
 }
 
-.information-lower__category-item {
+.page-information__category-item {
     text-align: center;
     background-color: $lightblue;
     color: $skyblue;
@@ -76,7 +76,7 @@
         position: relative;
     }
 }
-.information-lower__category-item::before {
+.page-information__category-item::before {
     @include mq("md") {
         position: absolute;
         content: "";
@@ -89,12 +89,12 @@
         left: rem(15);
     }
 }
-.information-lower__category-item:hover {
+.page-information__category-item:hover {
     @include mq("md") {
         opacity: 0.6;
     }
 }
-.information-lower__category-item img {
+.page-information__category-item img {
     display: none;
     width: rem(64);
     height: rem(64);
@@ -102,7 +102,7 @@
         display: inline-block;
     }
 }
-.information-lower__category-item a {
+.page-information__category-item a {
     display: inline-block;
     font-size: rem(14);
     font-weight: $normal;
@@ -111,19 +111,19 @@
         margin-left: rem(65);
     }
 }
-.information-lower__category-item.current {
+.page-information__category-item.current {
     @include mq("md") {
         background-color: $skyblue;
         color: $white;
     }
 }
-.information-lower__category-item.current::before {
+.page-information__category-item.current::before {
     background-image: url(../../assets/images/common/info_icon01-w.png);
 }
-.information-lower__frame {
+.page-information__frame {
     display: none;
 }
-.information-lower__box {
+.page-information__box {
     width: 100%;
     margin-top: rem(16);
     border: rem(1) solid $skyblue;
@@ -137,26 +137,26 @@
 }
 
 
-.information-lower__box-left {
+.page-information__box-left {
     @include mq("md") {
         width: 50%;
     }
 }
 
-.information-lower__title {
+.page-information__title {
     font-weight: $bold;
     font-size: rem(24);
     border-bottom: rem(1) solid $skyblue;
 }
 
-.information-lower__copy {
+.page-information__copy {
     margin-top: rem(8);
     font-size: rem(16);
     font-weight: $normal;
     line-height: 1.5;
 }
 
-.information-lower__figure {
+.page-information__figure {
     margin-top: rem(8);
     width: 100%;
     aspect-ratio: 297 / 189;
@@ -167,7 +167,7 @@
 
     }
 }
-.information-lower__figure img {
+.page-information__figure img {
     object-fit: cover;
     width: 100%;
     height: 100%;
