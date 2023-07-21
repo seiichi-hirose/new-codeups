@@ -20,16 +20,20 @@
     width: 100%;
     max-width: rem(38);
     height: rem(38);
+
     border: rem(1) solid $skyblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     color: $skyblue;
     transition: all .3s;
+    text-align: center;
+    line-height: 2;
     @include mq("md") {
         cursor: pointer;
     }
 }
+
 .list-pagination__item:hover {
     @include mq("md") {
         opacity: 0.6;
