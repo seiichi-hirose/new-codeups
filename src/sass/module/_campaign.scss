@@ -41,11 +41,11 @@
 }
 
 .campaign__card {
-     width: rem(280);
-     margin-right: rem(24);
+    //  width: rem(280);
+    //  margin-right: rem(24);
     @include mq("md") {
         // margin-right: rem(40);
-        width: rem(333);
+        // width: rem(333);
     }
 }
 
