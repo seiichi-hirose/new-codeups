@@ -204,6 +204,14 @@ input[type=checkbox]:checked + .contact-form__label::after {
         margin-top: rem(80);
     }
 }
+.contact-form__privacy-link {
+    text-decoration: underline;
+}
+.contact-form__privacy-link:hover {
+    @include mq("md") {
+        opacity: 0.6;
+    }
+}
 
 .contact-form__button-layout {
     text-align: center;
