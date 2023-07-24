@@ -114,13 +114,16 @@ color.on('inview', function(){
   });
 
   // タブメニュー
-    $(".js-page-information__frame:first-of-type").css("display", "block");
-    $(".js-page-information__category-item").on("click", function () {
+    $(".page-information__frame:first-of-type").css("display", "block");
+    $(".page-information__category-item").on("click", function () {
       $(".current").removeClass("current");
       $(this).addClass("current");
-      const index = $(this).index();
-      $(".js-page-information__frame").hide().eq(index).fadeIn(300);
+    //   const index = $(this).index();
+    //   $(".js-page-information__frame").hide().eq(index).fadeIn(300);
     });
+
+
+
 
     //モーダル
     let scrollPosition;
@@ -194,3 +197,69 @@ const swiper2 = new Swiper(".js-campaign", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+
+
+var tabs = document.querySelectorAll('.page-information__category a');
+var pages = document.querySelectorAll('.page-information__boxes .page-information__frame');
+
+
+// ---------------------------
+// ▼B：タブの切り替え処理
+// ---------------------------
+function changeTab() {
+    // ▼B-1. href属性値から対象のid名を抜き出す
+    var targetid = this.href.substring(this.href.indexOf('#')+1,this.href.length);
+ 
+    // ▼B-2. 指定のタブページだけを表示する
+    for(var i=0; i<pages.length; i++) {
+       if( pages[i].id != targetid ) {
+          pages[i].style.display = "none";
+       }
+       else {
+          pages[i].style.display = "block";
+       }
+    }
+ 
+    // ▼B-3. クリックされたタブを前面に表示する
+    for(var i=0; i<tabs.length; i++) {
+       tabs[i].style.zIndex = "0";
+    }
+    this.style.zIndex = "10";
+ 
+    // ▼B-4. ページ遷移しないようにfalseを返す
+    return false;
+ }
+ 
+ // ---------------------------
+ // ▼C：すべてのタブに対して、クリック時にchangeTab関数が実行されるよう指定する
+ // ---------------------------
+ for(var i=0; i<tabs.length; i++) {
+    tabs[i].onclick = changeTab;
+ }
+ 
+ // ---------------------------
+ // ▼D：最初は先頭のタブを選択しておく
+ // ---------------------------
+ tabs[0].onclick();
+
+// ページがロードされたときに、アンカーリンクのクリックイベントを設定
+document.addEventListener('DOMContentLoaded', function () {
+    var anchorLinks = document.querySelectorAll('a[href^="#"]');
+    for (var i = 0; i < anchorLinks.length; i++) {
+        anchorLinks[i].addEventListener('click', scrollToTab);
+    }
+});
+
+// アンカーリンクをクリックしたときの処理
+function scrollToTab(event) {
+    event.preventDefault(); // デフォルトのリンク遷移を防止
+
+    var targetTabId = this.getAttribute('href'); // クリックしたリンクのhref属性（タブのID）を取得
+    var targetTab = document.querySelector(targetTabId); // タブの要素を取得
+
+    if (targetTab) {
+        var tabOffsetTop = targetTab.offsetTop; // タブの上端からのオフセット位置を取得
+        window.scrollTo({ top: tabOffsetTop, behavior: 'smooth' }); // タブまでスクロールする
+    }
+}

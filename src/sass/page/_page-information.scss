@@ -51,9 +51,11 @@
 .page-information__category-items {
     display: flex;
     align-items: center;
-    // gap: rem(20);
+
+    gap: rem(20);
     @include mq("md") {
         justify-content: space-between;
+        gap: 0;
     }
 }
 
@@ -108,7 +110,7 @@
     font-weight: $normal;
     @include mq("md") {
         font-size: rem(24);
-        margin-left: rem(65);
+        padding-left: rem(50);
     }
 }
 .page-information__category-item.current {
@@ -173,3 +175,11 @@
     height: 100%;
 }
 
+
+.page-information__category-item a {
+    @include mq("md") {
+        width: 100%;
+        height: 100%;
+        line-height: 3.5;
+    }
+}
